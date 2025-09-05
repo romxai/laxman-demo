@@ -5,6 +5,49 @@ import { CarPartsDatabase } from "@/types";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
 
+function isTimeRelatedQuery(message: string): boolean {
+  const timeKeywords = [
+    'open', 'close', 'hours', 'time', 'today', 'tomorrow', 'now', 'current',
+    'schedule', 'operating', 'business', 'available', 'when', 'what time',
+    'opening', 'closing', 'monday', 'tuesday', 'wednesday', 'thursday',
+    'friday', 'saturday', 'sunday', 'weekend', 'weekday', 'holiday', 'aaj',
+    'kal', 'abhi', 'samay', 'kaun sa din', 'kaun sa samay', 'dokan', 'kya samay',
+    'kya ghante', 'kab se kab tak', 'kab khulta hai', 'kab band hota hai'
+  ];
+
+  const lowerMessage = message.toLowerCase();
+  return timeKeywords.some(keyword => lowerMessage.includes(keyword));
+}
+
+function getCurrentDateTimeInfo(): string {
+  const now = new Date();
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    timeZone: 'Asia/Kolkata',
+    timeZoneName: 'short'
+  };
+
+  const formattedDateTime = now.toLocaleString('en-IN', options);
+  const dayOfWeek = now.toLocaleString('en-IN', { weekday: 'long' });
+  const currentHour = now.getHours();
+  const currentMinute = now.getMinutes();
+
+  return `Current Date and Time Information:
+- Full DateTime: ${formattedDateTime}
+- Day of Week: ${dayOfWeek}
+- Current Hour: ${currentHour}:${currentMinute.toString().padStart(2, '0')}
+- Unix Timestamp: ${now.getTime()}
+- Timezone: IST (Indian Standard Time)
+
+Please use this information to determine if the store is currently open or provide accurate time-related information.`;
+}
+
 export async function POST(request: NextRequest) {
   try {
     const { message, history } = await request.json();
@@ -18,6 +61,10 @@ export async function POST(request: NextRequest) {
 
     const database = carPartsData as unknown as CarPartsDatabase;
     const contextData = JSON.stringify(database, null, 2);
+
+    // Check if the query is time-related
+    const isTimeQuery = isTimeRelatedQuery(message);
+    const timeContext = isTimeQuery ? `\n\n${getCurrentDateTimeInfo()}` : '';
 
     // --- REVISED & MORE ROBUST SYSTEM PROMPT ---
     const systemPrompt = `You are an AI assistant for "${database.shop_info.name}", an Indian auto parts and accessories shop.
@@ -40,13 +87,18 @@ export async function POST(request: NextRequest) {
     * When talking about a product that has images in the database, include [IMAGE_PRESENT:product_id] anywhere in your response. For example: [IMAGE_PRESENT:ep001] for air filters.
     * Do NOT include actual image URLs in your responses.
     * Use ** around text to make it bold for emphasis. For example: "We offer **high-quality** air filters."
+6.  **Time and Date Awareness:**
+    * When users ask about store hours, current availability, or time-related questions, use the provided current date and time information to give accurate responses.
+    * Compare the current time with store hours to determine if the store is open. do NOT guess or assume. Do not tell the current time just if its open or not and its timings on that day. if it is closed then tell when it will be open next.
+    * Provide helpful information about when the store will open or close based on current time.
 
 AVAILABLE DATABASE:
-${contextData}
+${contextData}${timeContext}
 
 Guidelines for responses:
 - Be conversational and friendly.
 - When confirming an "All vehicles" part, mention it clearly. For example: "Yes, our seat covers are compatible with all vehicles, so they should fit your Bugatti well."
+- For time-related queries, be specific about current status and provide relevant timing information.
 `;
 
     const model = genAI.getGenerativeModel({

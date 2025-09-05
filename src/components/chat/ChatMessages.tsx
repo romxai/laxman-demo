@@ -2,15 +2,17 @@
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MessageBubble } from "./MessageBubble";
+import { SampleQuestions } from "./SampleQuestions";
 import { Message } from "@/types";
 import { useEffect, useRef } from "react";
 import carPartsData from "@/data/car-parts.json";
 
 interface ChatMessagesProps {
   messages: Message[];
+  onSendMessage?: (message: string) => void;
 }
 
-export function ChatMessages({ messages }: ChatMessagesProps) {
+export function ChatMessages({ messages, onSendMessage }: ChatMessagesProps) {
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -118,6 +120,10 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
                   queries about parts or vehicles not in the dataset, the bot
                   will recommend contacting a human representative.
                 </div>
+
+                {onSendMessage && (
+                  <SampleQuestions onQuestionClick={onSendMessage} />
+                )}
               </div>
             </div>
           ) : (

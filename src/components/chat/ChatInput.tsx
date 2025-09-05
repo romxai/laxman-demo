@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Send, Loader2 } from "lucide-react";
@@ -12,12 +12,42 @@ interface ChatInputProps {
 
 export function ChatInput({ onSendMessage, isLoading }: ChatInputProps) {
   const [message, setMessage] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Focus input when component mounts and when user types
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Focus input on any key press (except special keys)
+      if (!isLoading && inputRef.current && 
+          !['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12', 
+           'Tab', 'CapsLock', 'Shift', 'Control', 'Alt', 'Meta', 'Escape', 'ArrowUp', 
+           'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
+        inputRef.current.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isLoading]);
+
+  // Focus input when component mounts
+  useEffect(() => {
+    if (inputRef.current && !isLoading) {
+      inputRef.current.focus();
+    }
+  }, [isLoading]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (message.trim() && !isLoading) {
       onSendMessage(message.trim());
       setMessage("");
+      // Refocus after sending
+      setTimeout(() => {
+        if (inputRef.current) {
+          inputRef.current.focus();
+        }
+      }, 0);
     }
   };
 
@@ -34,6 +64,7 @@ export function ChatInput({ onSendMessage, isLoading }: ChatInputProps) {
       className="flex gap-2 p-4 chat-input-section items-center border-t"
     >
       <Input
+        ref={inputRef}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         onKeyPress={handleKeyPress}
