@@ -84,7 +84,7 @@
           "availability": "In Stock",
           "images": [
             "https://www.boschautoparts.com/o/commerce-media/accounts/-1/images/1486841",
-            "hhttps://www.boschautoparts.com/o/commerce-media/accounts/-1/images/1486348"
+            "https://www.boschautoparts.com/o/commerce-media/accounts/-1/images/1486348"
           ]
         },
         {
@@ -129,8 +129,10 @@
           "compatibility": ["Maruti", "Hyundai", "Tata", "Honda", "Toyota"],
           "warranty": "1-2 years",
           "availability": "In Stock",
-          "images": ["https://5.imimg.com/data5/ANDROID/Default/2022/11/KO/JW/MO/136927331/product-jpeg-500x500.jpg", 
-          "https://m.media-amazon.com/images/I/61lwjTn8UhL._UF1000,1000_QL80_.jpg"]
+          "images": [
+            "https://5.imimg.com/data5/ANDROID/Default/2022/11/KO/JW/MO/136927331/product-jpeg-500x500.jpg",
+            "https://m.media-amazon.com/images/I/61lwjTn8UhL._UF1000,1000_QL80_.jpg"
+          ]
         },
         {
           "id": "sp002",
@@ -175,9 +177,7 @@
           "compatibility": ["Maruti", "Hyundai", "Tata", "Honda", "Toyota"],
           "warranty": "1 year",
           "availability": "In Stock",
-          "images": [
-            "https://m.media-amazon.com/images/I/71ASqOLMmsL.jpg"
-          ]
+          "images": ["https://m.media-amazon.com/images/I/71ASqOLMmsL.jpg"]
         },
         {
           "id": "elp003",

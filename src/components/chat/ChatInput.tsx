@@ -18,16 +18,41 @@ export function ChatInput({ onSendMessage, isLoading }: ChatInputProps) {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Focus input on any key press (except special keys)
-      if (!isLoading && inputRef.current && 
-          !['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12', 
-           'Tab', 'CapsLock', 'Shift', 'Control', 'Alt', 'Meta', 'Escape', 'ArrowUp', 
-           'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
+      if (
+        !isLoading &&
+        inputRef.current &&
+        ![
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8",
+          "F9",
+          "F10",
+          "F11",
+          "F12",
+          "Tab",
+          "CapsLock",
+          "Shift",
+          "Control",
+          "Alt",
+          "Meta",
+          "Escape",
+          "ArrowUp",
+          "ArrowDown",
+          "ArrowLeft",
+          "ArrowRight",
+        ].includes(e.key)
+      ) {
         inputRef.current.focus();
       }
     };
 
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, [isLoading]);
 
   // Focus input when component mounts

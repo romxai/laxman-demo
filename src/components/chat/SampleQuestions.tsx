@@ -8,14 +8,12 @@ export function SampleQuestions({ onQuestionClick }: SampleQuestionsProps) {
   const sampleQuestions = [
     "hello ji aapke paas break pad hoga Tata Harrier ka?",
     "I want to fit car mat do you have?",
-    "What is the cost for an alternator for my Honda?"
+    "What is the cost for an alternator for my Honda?",
   ];
 
   return (
     <div className="mt-8">
-      <div className="text-center text-sm text-gray-300 mb-4">
-        Try asking:
-      </div>
+      <div className="text-center text-sm text-gray-300 mb-4">Try asking:</div>
       <div className="flex flex-col gap-3 max-w-2xl mx-auto">
         {sampleQuestions.map((question, index) => (
           <button
@@ -28,8 +26,18 @@ export function SampleQuestions({ onQuestionClick }: SampleQuestionsProps) {
                 {question}
               </span>
               <div className="text-[rgba(36,83,72,0.8)] group-hover:text-[rgba(36,83,72,1)] transition-colors">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </div>
             </div>

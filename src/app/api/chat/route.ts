@@ -7,41 +7,73 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
 
 function isTimeRelatedQuery(message: string): boolean {
   const timeKeywords = [
-    'open', 'close', 'hours', 'time', 'today', 'tomorrow', 'now', 'current',
-    'schedule', 'operating', 'business', 'available', 'when', 'what time',
-    'opening', 'closing', 'monday', 'tuesday', 'wednesday', 'thursday',
-    'friday', 'saturday', 'sunday', 'weekend', 'weekday', 'holiday', 'aaj',
-    'kal', 'abhi', 'samay', 'kaun sa din', 'kaun sa samay', 'dokan', 'kya samay',
-    'kya ghante', 'kab se kab tak', 'kab khulta hai', 'kab band hota hai'
+    "open",
+    "close",
+    "hours",
+    "time",
+    "today",
+    "tomorrow",
+    "now",
+    "current",
+    "schedule",
+    "operating",
+    "business",
+    "available",
+    "when",
+    "what time",
+    "opening",
+    "closing",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+    "sunday",
+    "weekend",
+    "weekday",
+    "holiday",
+    "aaj",
+    "kal",
+    "abhi",
+    "samay",
+    "kaun sa din",
+    "kaun sa samay",
+    "dokan",
+    "kya samay",
+    "kya ghante",
+    "kab se kab tak",
+    "kab khulta hai",
+    "kab band hota hai",
   ];
 
   const lowerMessage = message.toLowerCase();
-  return timeKeywords.some(keyword => lowerMessage.includes(keyword));
+  return timeKeywords.some((keyword) => lowerMessage.includes(keyword));
 }
 
 function getCurrentDateTimeInfo(): string {
   const now = new Date();
   const options: Intl.DateTimeFormatOptions = {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    timeZone: 'Asia/Kolkata',
-    timeZoneName: 'short'
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    timeZone: "Asia/Kolkata",
+    timeZoneName: "short",
   };
 
-  const formattedDateTime = now.toLocaleString('en-IN', options);
-  const dayOfWeek = now.toLocaleString('en-IN', { weekday: 'long' });
+  const formattedDateTime = now.toLocaleString("en-IN", options);
+  const dayOfWeek = now.toLocaleString("en-IN", { weekday: "long" });
   const currentHour = now.getHours();
   const currentMinute = now.getMinutes();
 
   return `Current Date and Time Information:
 - Full DateTime: ${formattedDateTime}
 - Day of Week: ${dayOfWeek}
-- Current Hour: ${currentHour}:${currentMinute.toString().padStart(2, '0')}
+- Current Hour: ${currentHour}:${currentMinute.toString().padStart(2, "0")}
 - Unix Timestamp: ${now.getTime()}
 - Timezone: IST (Indian Standard Time)
 
@@ -64,7 +96,7 @@ export async function POST(request: NextRequest) {
 
     // Check if the query is time-related
     const isTimeQuery = isTimeRelatedQuery(message);
-    const timeContext = isTimeQuery ? `\n\n${getCurrentDateTimeInfo()}` : '';
+    const timeContext = isTimeQuery ? `\n\n${getCurrentDateTimeInfo()}` : "";
 
     // --- REVISED & MORE ROBUST SYSTEM PROMPT ---
     const systemPrompt = `You are an AI assistant for "${database.shop_info.name}", an Indian auto parts and accessories shop.
@@ -106,10 +138,12 @@ Guidelines for responses:
       systemInstruction: systemPrompt,
     });
 
-    const chatHistory = history.map((msg: { role: string; content: string }) => ({
-      role: msg.role === "assistant" ? "model" : "user",
-      parts: [{ text: msg.content }],
-    }));
+    const chatHistory = history.map(
+      (msg: { role: string; content: string }) => ({
+        role: msg.role === "assistant" ? "model" : "user",
+        parts: [{ text: msg.content }],
+      })
+    );
 
     const chat = model.startChat({
       history: chatHistory,
@@ -135,7 +169,7 @@ Guidelines for responses:
         // Find the item in the database
         for (const categoryKey in database.categories) {
           const category = database.categories[categoryKey];
-          const item = category.items.find(item => item.id === itemId);
+          const item = category.items.find((item) => item.id === itemId);
           if (item && item.images && item.images.length > 0) {
             // Add all images for this item
             imageUrls.push(...item.images);

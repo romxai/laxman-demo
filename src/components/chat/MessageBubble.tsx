@@ -16,11 +16,11 @@ export function MessageBubble({ message }: MessageBubbleProps) {
   return (
     <div
       className={cn(
-        "flex gap-3 mb-4",
+        "flex gap-2 sm:gap-3 mb-4",
         isUser ? "flex-row-reverse" : "flex-row"
       )}
     >
-      <Avatar className="w-8 h-8 flex-shrink-0">
+      <Avatar className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0">
         <AvatarFallback
           className={cn(
             isUser
@@ -28,13 +28,13 @@ export function MessageBubble({ message }: MessageBubbleProps) {
               : "bg-[rgba(61,60,63,1)] text-white"
           )}
         >
-          {isUser ? <User className="w-4 h-4" /> : <Bot className="w-4 h-4" />}
+          {isUser ? <User className="w-3 h-3 sm:w-4 sm:h-4" /> : <Bot className="w-3 h-3 sm:w-4 sm:h-4" />}
         </AvatarFallback>
       </Avatar>
 
       <Card
         className={cn(
-          "px-4 py-2 max-w-[70%] shadow-sm relative gap-2",
+          "px-3 py-2 sm:px-4 sm:py-2 max-w-[85%] sm:max-w-[70%] shadow-sm relative gap-2",
           isUser
             ? "bg-[rgba(36,83,72,1)] text-white border-transparent"
             : "bg-[rgba(61,60,63,1)] text-white border-transparent"
@@ -42,7 +42,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
       >
         <div className="text-sm whitespace-pre-wrap break-words text-white mb-0">
           {message.content.split(/(\*\*[^*]+\*\*)/).map((part, index) => {
-            if (part.startsWith('**') && part.endsWith('**')) {
+            if (part.startsWith("**") && part.endsWith("**")) {
               const text = part.slice(2, -2);
               return <strong key={index}>{text}</strong>;
             }
@@ -68,7 +68,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
                 rel="noreferrer"
                 className="block"
               >
-                <div className="w-64 h-40 bg-gray-800 rounded overflow-hidden flex items-center justify-center">
+                <div className="w-full max-w-[200px] sm:max-w-[180px] md:max-w-[160px] h-32 sm:h-36 md:h-40 bg-gray-800 rounded overflow-hidden flex items-center justify-center mx-auto">
                   <img
                     src={url}
                     loading="lazy"

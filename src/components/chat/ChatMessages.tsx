@@ -36,33 +36,37 @@ export function ChatMessages({ messages, onSendMessage }: ChatMessagesProps) {
         }}
       />
 
-      <ScrollArea className="h-full p-4" ref={scrollAreaRef}>
+      <ScrollArea className="h-full p-2 sm:p-4" ref={scrollAreaRef}>
         <div className="space-y-4">
           {messages.length === 0 ? (
             <div className="flex-1 min-h-[40vh] flex items-center justify-center text-white">
-              <div className="w-full max-w-4xl p-4">
-                <div className="text-2xl font-semibold mb-4 text-center">
+              <div className="w-full max-w-4xl p-2 sm:p-4">
+                <div className="text-xl sm:text-2xl font-semibold mb-4 text-center">
                   Welcome to Laxman Auto Parts & Accessories
                 </div>
-                <div className="text-center text-sm mb-6">
+                <div className="text-center text-sm mb-6 px-2">
                   Ask me about car parts, accessories, prices, and availability
                   — below is what this demo currently covers.
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                   <div className="p-4 bg-[rgba(23,23,23,0.6)] rounded-lg border border-gray-700">
                     <h3 className="font-semibold mb-2">Types of parts</h3>
                     <p className="text-sm mb-2">
                       This demo includes the following categories:
                     </p>
                     <ul className="list-disc list-inside text-sm space-y-1">
-                      {Object.values((carPartsData as { categories: Record<string, { name: string }> }).categories).map(
-                        (c: { name: string }) => (
-                          <li key={c.name} className="truncate">
-                            {c.name}
-                          </li>
-                        )
-                      )}
+                      {Object.values(
+                        (
+                          carPartsData as {
+                            categories: Record<string, { name: string }>;
+                          }
+                        ).categories
+                      ).map((c: { name: string }) => (
+                        <li key={c.name} className="truncate">
+                          {c.name}
+                        </li>
+                      ))}
                     </ul>
                   </div>
 
@@ -74,13 +78,24 @@ export function ChatMessages({ messages, onSendMessage }: ChatMessagesProps) {
                     <div className="text-sm">
                       {(() => {
                         const compat = new Set<string>();
-                        Object.values((carPartsData as { categories: Record<string, { items?: { compatibility?: string[] }[] }> }).categories).forEach(
+                        Object.values(
+                          (
+                            carPartsData as {
+                              categories: Record<
+                                string,
+                                { items?: { compatibility?: string[] }[] }
+                              >;
+                            }
+                          ).categories
+                        ).forEach(
                           (cat: { items?: { compatibility?: string[] }[] }) => {
-                            (cat.items || []).forEach((it: { compatibility?: string[] }) => {
-                              (it.compatibility || []).forEach((v: string) =>
-                                compat.add(v)
-                              );
-                            });
+                            (cat.items || []).forEach(
+                              (it: { compatibility?: string[] }) => {
+                                (it.compatibility || []).forEach((v: string) =>
+                                  compat.add(v)
+                                );
+                              }
+                            );
                           }
                         );
                         const items = Array.from(compat).slice(0, 8);
@@ -101,14 +116,30 @@ export function ChatMessages({ messages, onSendMessage }: ChatMessagesProps) {
                       Available services included in this demo:
                     </p>
                     <ul className="list-disc list-inside text-sm space-y-1">
-                      {((carPartsData as { services?: { name: string; price?: string; availability?: string }[] }).services || []).map((s: { name: string; price?: string; availability?: string }) => (
-                        <li key={s.name}>
-                          {s.name} —{" "}
-                          <span className="text-xs text-gray-300">
-                            {s.price || s.availability}
-                          </span>
-                        </li>
-                      ))}
+                      {(
+                        (
+                          carPartsData as {
+                            services?: {
+                              name: string;
+                              price?: string;
+                              availability?: string;
+                            }[];
+                          }
+                        ).services || []
+                      ).map(
+                        (s: {
+                          name: string;
+                          price?: string;
+                          availability?: string;
+                        }) => (
+                          <li key={s.name}>
+                            {s.name} —{" "}
+                            <span className="text-xs text-gray-300">
+                              {s.price || s.availability}
+                            </span>
+                          </li>
+                        )
+                      )}
                     </ul>
                   </div>
                 </div>
