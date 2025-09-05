@@ -15,12 +15,19 @@
           "availability": "In Stock"
         },
         {
-          "id": "ep002", 
+          "id": "ep002",
           "name": "Oil Filter",
           "brands": ["Bosch", "Mann Filter", "Mahle", "UFI"],
           "price_range": "₹150 - ₹800",
           "description": "Premium oil filters to keep your engine oil clean and extend engine life",
-          "compatibility": ["Maruti", "Hyundai", "Tata", "Honda", "Toyota", "Ford"],
+          "compatibility": [
+            "Maruti",
+            "Hyundai",
+            "Tata",
+            "Honda",
+            "Toyota",
+            "Ford"
+          ],
           "warranty": "6 months",
           "availability": "In Stock"
         },

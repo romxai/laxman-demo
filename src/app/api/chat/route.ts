@@ -1,9 +1,9 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
-import { NextRequest, NextResponse } from 'next/server';
-import carPartsData from '@/data/car-parts.json';
-import { CarPartsDatabase } from '@/types';
+import { GoogleGenerativeAI } from "@google/generative-ai";
+import { NextRequest, NextResponse } from "next/server";
+import carPartsData from "@/data/car-parts.json";
+import { CarPartsDatabase } from "@/types";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
 
 export async function POST(request: NextRequest) {
   try {
@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
 
     if (!process.env.GEMINI_API_KEY) {
       return NextResponse.json(
-        { error: 'API key not configured' },
+        { error: "API key not configured" },
         { status: 500 }
       );
     }
@@ -47,8 +47,8 @@ Remember: You represent ${database.shop_info.name} and should only provide infor
 
     // Format conversation history for Gemini
     const chatHistory = history.map((msg: any) => ({
-      role: msg.role === 'assistant' ? 'model' : 'user',
-      parts: [{ text: msg.content }]
+      role: msg.role === "assistant" ? "model" : "user",
+      parts: [{ text: msg.content }],
     }));
 
     const chat = model.startChat({
@@ -59,15 +59,17 @@ Remember: You represent ${database.shop_info.name} and should only provide infor
       },
     });
 
-    const result = await chat.sendMessage(`${systemPrompt}\n\nCustomer: ${message}`);
+    const result = await chat.sendMessage(
+      `${systemPrompt}\n\nCustomer: ${message}`
+    );
     const response = await result.response;
     const text = response.text();
 
     return NextResponse.json({ message: text });
   } catch (error) {
-    console.error('Error in chat API:', error);
+    console.error("Error in chat API:", error);
     return NextResponse.json(
-      { error: 'Failed to process message' },
+      { error: "Failed to process message" },
       { status: 500 }
     );
   }

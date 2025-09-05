@@ -1,58 +1,66 @@
-'use client';
+"use client";
 
-import { Message } from '@/types';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Card } from '@/components/ui/card';
-import { User, Bot } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { Message } from "@/types";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Card } from "@/components/ui/card";
+import { User, Bot } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface MessageBubbleProps {
   message: Message;
 }
 
 export function MessageBubble({ message }: MessageBubbleProps) {
-  const isUser = message.role === 'user';
-  
+  const isUser = message.role === "user";
+
   return (
-    <div className={cn(
-      'flex gap-3 mb-4',
-      isUser ? 'flex-row-reverse' : 'flex-row'
-    )}>
+    <div
+      className={cn(
+        "flex gap-3 mb-4",
+        isUser ? "flex-row-reverse" : "flex-row"
+      )}
+    >
       <Avatar className="w-8 h-8 flex-shrink-0">
-        <AvatarFallback className={cn(
-          isUser 
-            ? 'bg-blue-500 text-white' 
-            : 'bg-gray-500 text-white'
-        )}>
+        <AvatarFallback
+          className={cn(
+            isUser
+              ? "bg-[rgba(36,83,72,1)] text-white"
+              : "bg-[rgba(61,60,63,1)] text-white"
+          )}
+        >
           {isUser ? <User className="w-4 h-4" /> : <Bot className="w-4 h-4" />}
         </AvatarFallback>
       </Avatar>
-      
-      <Card className={cn(
-        'px-4 py-3 max-w-[80%] shadow-sm',
-        isUser 
-          ? 'bg-blue-500 text-white border-blue-500' 
-          : 'bg-white border-gray-200'
-      )}>
-        <div className="text-sm whitespace-pre-wrap break-words">
+
+      <Card
+        className={cn(
+          "px-4 py-3 max-w-[80%] shadow-sm",
+          isUser
+            ? "bg-[rgba(36,83,72,1)] text-white border-transparent"
+            : "bg-[rgba(61,60,63,1)] text-white border-transparent"
+        )}
+      >
+        <div className="text-sm whitespace-pre-wrap break-words text-white">
           {message.content}
         </div>
         {message.imageUrl && (
           <div className="mt-2">
-            <img 
-              src={message.imageUrl} 
-              alt="Shared image" 
+            <img
+              src={message.imageUrl}
+              alt="Shared image"
               className="max-w-full h-auto rounded-md"
             />
           </div>
         )}
-        <div className={cn(
-          'text-xs mt-2 opacity-70',
-          isUser ? 'text-blue-100' : 'text-gray-500'
-        )}>
-          {message.timestamp.toLocaleTimeString([], { 
-            hour: '2-digit', 
-            minute: '2-digit' 
+        <div
+          className={cn(
+            "message-timestamp mt-2",
+            isUser ? "text-[rgba(36,83,72,0.85)]" : "text-gray-300"
+          )}
+        >
+          {message.timestamp.toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
           })}
         </div>
       </Card>

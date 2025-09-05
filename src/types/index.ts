@@ -1,9 +1,9 @@
 export interface Message {
   id: string;
-  role: 'user' | 'assistant';
+  role: "user" | "assistant";
   content: string;
   timestamp: Date;
-  type?: 'text' | 'image';
+  type?: "text" | "image";
   imageUrl?: string;
 }
 
