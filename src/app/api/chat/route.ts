@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const database = carPartsData as CarPartsDatabase;
+    const database = carPartsData as unknown as CarPartsDatabase;
     const contextData = JSON.stringify(database, null, 2);
 
     // --- REVISED & MORE ROBUST SYSTEM PROMPT ---
@@ -36,6 +36,10 @@ export async function POST(request: NextRequest) {
     * If the list contains the phrase "All vehicles", you MUST confirm the part is compatible with the user's car brand (like Bugatti, Ford, etc.).
     * You should ONLY use the fallback response if the specific brand is not in the compatibility list AND the list DOES NOT contain "All vehicles".
     * **Fallback Response:** "I'm sorry, but it looks like we don't carry that specific item for your vehicle. Would you like me to connect you with a human representative who can check other options?"
+5.  **Image Display Instructions:**
+    * When talking about a product that has images in the database, include [IMAGE_PRESENT:product_id] anywhere in your response. For example: [IMAGE_PRESENT:ep001] for air filters.
+    * Do NOT include actual image URLs in your responses.
+    * Use ** around text to make it bold for emphasis. For example: "We offer **high-quality** air filters."
 
 AVAILABLE DATABASE:
 ${contextData}
@@ -50,7 +54,7 @@ Guidelines for responses:
       systemInstruction: systemPrompt,
     });
 
-    const chatHistory = history.map((msg: any) => ({
+    const chatHistory = history.map((msg: { role: string; content: string }) => ({
       role: msg.role === "assistant" ? "model" : "user",
       parts: [{ text: msg.content }],
     }));
@@ -65,23 +69,33 @@ Guidelines for responses:
 
     const result = await chat.sendMessage(message);
     const response = await result.response;
-    const text = response.text();
+    let text = response.text();
 
-    // Extract any URLs the assistant included in its own response text.
-    // We will ONLY return images that Gemini itself provided (via links in the text).
-    const urlRegex =
-      /(https?:\/\/[\w\-./?=&%#:+,~\[\]\(\)]+?)(?=[\s\)\]\n]|$)/g;
-    const matches = text.match(urlRegex) || [];
-    // Filter to common image extensions and also allow generic links (the client will try to load them).
-    const imageUrls = matches.filter(
-      (u) =>
-        /\.(png|jpe?g|webp|svg|gif)(\?|$)/i.test(u) || /\/documents\//i.test(u)
-    );
+    // Look for image indicators in the response (format: [IMAGE_PRESENT:item_id])
+    const imageIndicatorRegex = /\[IMAGE_PRESENT:([a-z0-9]+)\]/g;
+    const imageMatches = [...text.matchAll(imageIndicatorRegex)];
+    const imageUrls: string[] = [];
 
-    // If Gemini included links but none look like images, still include raw links (user requested them).
-    const finalImageUrls = imageUrls.length > 0 ? imageUrls : matches;
+    // Process any image indicators and remove them from the displayed text
+    if (imageMatches.length > 0) {
+      for (const match of imageMatches) {
+        const itemId = match[1];
+        // Find the item in the database
+        for (const categoryKey in database.categories) {
+          const category = database.categories[categoryKey];
+          const item = category.items.find(item => item.id === itemId);
+          if (item && item.images && item.images.length > 0) {
+            // Add all images for this item
+            imageUrls.push(...item.images);
+          }
+        }
+      }
 
-    return NextResponse.json({ message: text, imageUrls: finalImageUrls });
+      // Remove the image indicators from the text
+      text = text.replace(imageIndicatorRegex, "");
+    }
+
+    return NextResponse.json({ message: text, imageUrls: imageUrls });
   } catch (error) {
     console.error("Error in chat API:", error);
     return NextResponse.json(

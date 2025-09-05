@@ -41,7 +41,13 @@ export function MessageBubble({ message }: MessageBubbleProps) {
         )}
       >
         <div className="text-sm whitespace-pre-wrap break-words text-white mb-0">
-          {message.content}
+          {message.content.split(/(\*\*[^*]+\*\*)/).map((part, index) => {
+            if (part.startsWith('**') && part.endsWith('**')) {
+              const text = part.slice(2, -2);
+              return <strong key={index}>{text}</strong>;
+            }
+            return part;
+          })}
         </div>
         {message.imageUrl && (
           <div className="mt-2">
@@ -53,12 +59,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
           </div>
         )}
         {message.imageUrls && message.imageUrls.length > 0 && (
-          <div
-            className="mt-2 grid gap-2"
-            style={{
-              gridTemplateColumns: `repeat(${message.imageUrls.length}, minmax(0, 1fr))`,
-            }}
-          >
+          <div className="mt-2 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {message.imageUrls.map((url, i) => (
               <a
                 key={url + i}
@@ -67,7 +68,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
                 rel="noreferrer"
                 className="block"
               >
-                <div className="w-full h-40 bg-gray-800 rounded overflow-hidden flex items-center justify-center">
+                <div className="w-64 h-40 bg-gray-800 rounded overflow-hidden flex items-center justify-center">
                   <img
                     src={url}
                     loading="lazy"

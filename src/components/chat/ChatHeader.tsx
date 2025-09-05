@@ -34,7 +34,7 @@ export function ChatHeader({ onReset, messageCount }: ChatHeaderProps) {
         variant="outline"
         size="sm"
         onClick={onReset}
-        className="flex items-center gap-2 text-gray-200 border-gray-600"
+        className="flex items-center gap-2 text-gray-200 border-gray-600 bg-grey-800 hover:bg-gray-700 hover:border-gray-500"
       >
         <RotateCcw className="w-4 h-4" />
         Reset Chat

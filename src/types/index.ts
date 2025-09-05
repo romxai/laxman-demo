@@ -17,6 +17,7 @@ export interface CarPart {
   compatibility: string[];
   warranty: string;
   availability: string;
+  images?: string[];
 }
 
 export interface Category {

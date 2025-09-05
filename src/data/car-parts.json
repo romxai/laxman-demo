@@ -49,8 +49,8 @@
           "warranty": "1 year",
           "availability": "In Stock",
           "images": [
-            "https://www.ngk.com/spark-plugs-ngk",
-            "https://www.boschautoparts.com/g/spark-plugs"
+            "https://s3-us-west-2.amazonaws.com/monarch-public-assets-prd/images/thumbs/0145047_ngk-0127-sifr6a11-laser-iridium-spark-plug_415.jpeg",
+            "https://s3-us-west-2.amazonaws.com/monarch-public-assets-prd/images/thumbs/0145063_ngk-1010-a6-nickel-spark-plug_415.jpeg"
           ]
         },
         {
@@ -63,8 +63,8 @@
           "warranty": "As per manufacturer",
           "availability": "In Stock",
           "images": [
-            "https://www.castrol.com/en_in/india/home/products/our-brands/automotive/edge.html",
-            "https://www.mobil.com/en/lubricants/for-personal-vehicles/our-products/motor-oils"
+            "https://www.castrol.com/content/dam/castrol/country-sites-new/en_in/india/home/images/highlander-packshots/pco/edge-hybrid-0w-16.jpg.img.750.medium.jpg",
+            "https://www.castrol.com/content/dam/castrol/country-sites-new/en_in/india/home/images/highlander-packshots/pco/castrol-edge-0w-20-ec.jpg.img.750.medium.jpg"
           ]
         }
       ]
@@ -83,8 +83,8 @@
           "warranty": "6 months to 1 year",
           "availability": "In Stock",
           "images": [
-            "https://www.boschautoparts.com/g/brakes",
-            "https://www.brembo.com/en"
+            "https://www.boschautoparts.com/o/commerce-media/accounts/-1/images/1486841",
+            "hhttps://www.boschautoparts.com/o/commerce-media/accounts/-1/images/1486348"
           ]
         },
         {
@@ -97,8 +97,7 @@
           "warranty": "1 year",
           "availability": "In Stock",
           "images": [
-            "https://www.brembo.com/en/solutions/for-your-car/sport-disc",
-            "https://www.amazon.com/Brembo-09-A130-10-Front-Brake-Disc/dp/B00DZL4P0W"
+            "https://www.boschautoparts.com/o/commerce-media/accounts/-1/images/1658410"
           ]
         },
         {
@@ -111,8 +110,8 @@
           "warranty": "2 years unopened",
           "availability": "In Stock",
           "images": [
-            "https://www.boschautoparts.com/g/brakes",
-            "https://www.castrol.com/en_in/india/home.html"
+            "https://www.boschautoparts.com/o/commerce-media/accounts/-1/images/1486489",
+            "https://www.castrol.com/content/dam/castrol/country-sites-new/en_in/india/home/images/highlander-packshots/pco/magnatec-0w-16-non-promo.jpg.img.750.medium.jpg"
           ]
         }
       ]
@@ -130,7 +129,8 @@
           "compatibility": ["Maruti", "Hyundai", "Tata", "Honda", "Toyota"],
           "warranty": "1-2 years",
           "availability": "In Stock",
-          "images": ["https://www.monroe.com/", "https://www.kyb.com/"]
+          "images": ["https://5.imimg.com/data5/ANDROID/Default/2022/11/KO/JW/MO/136927331/product-jpeg-500x500.jpg", 
+          "https://m.media-amazon.com/images/I/61lwjTn8UhL._UF1000,1000_QL80_.jpg"]
         },
         {
           "id": "sp002",
@@ -142,8 +142,8 @@
           "warranty": "1 year",
           "availability": "In Stock",
           "images": [
-            "https://eibach.com/",
-            "https://www.amazon.com/Eibach-1000-250-0375-I-D-Coil-Over-Spring/dp/B003TPHAZQ"
+            "https://www.moogparts.com/content/loc-na/loc-us/fmmp-moog/en_US/parts/suspension/coil-springs/_jcr_content/product-feature/featureContent1/image.img.png/1605564302341.png",
+            "https://cpimg.tistatic.com/04489509/b/6/Steel-Coil-Spring.jpg"
           ]
         }
       ]
@@ -162,8 +162,8 @@
           "warranty": "18 months to 4 years",
           "availability": "In Stock",
           "images": [
-            "https://www.exidecare.com/find-exide/batteries-for-car-suv-muv",
-            "https://www.amaron.com/passenger-vehicles"
+            "https://www.batteryboss.in/assets/images/batteryboss/battery/11_11_Amaron-FLO-DIN55R.jpg",
+            "data:image/jpeg;base64,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"
           ]
         },
         {
@@ -176,8 +176,7 @@
           "warranty": "1 year",
           "availability": "In Stock",
           "images": [
-            "https://www.boschautoparts.com/g/starters-and-alternators",
-            "https://www.densoproducts.com/alternators-denso"
+            "https://m.media-amazon.com/images/I/71ASqOLMmsL.jpg"
           ]
         },
         {
@@ -190,8 +189,8 @@
           "warranty": "6 months to 2 years",
           "availability": "In Stock",
           "images": [
-            "https://www.usa.philips.com/c-m-au/car-lights/headlight-bulbs/halogen",
-            "https://www.osram.com/ecat/Halogen%20headlight%20lamps-Car%20lighting-Automotive/com/en/GPS01_1056956/"
+            "https://www.planetcarcare.com/cdn/shop/files/61eEO38NQAL._SL1280_1024x1024.jpg?v=1718232524",
+            "https://5.imimg.com/data5/ANDROID/Default/2022/11/BM/IH/CF/3703925/product-jpeg.jpg"
           ]
         }
       ]
@@ -210,8 +209,8 @@
           "warranty": "6 months",
           "availability": "In Stock",
           "images": [
-            "https://3dmatsusa.com/",
-            "https://www.amazon.com/Customized-Mats-Perfect-Carpet-Diamond-All-Weather-Protection/dp/B0CSVLMCGX"
+            "https://www.carplus.in/cdn/shop/files/GFX-Lifelong-Car-Mats-With-Trunk-Mat-for-Maruti-Suzuki-Invicto-LIFE-LONG-CAR-MATS-GFX-4_1000x.jpg?v=1751176858",
+            "https://www.neodrift.in/cdn/shop/articles/7d_mats.webp?v=1734155573"
           ]
         },
         {
@@ -222,11 +221,7 @@
           "description": "Water-resistant car covers for exterior protection",
           "compatibility": ["All vehicles"],
           "warranty": "1 year",
-          "availability": "In Stock",
-          "images": [
-            "https://www.amazon.in/stores/AutoFurnish/page/B39102E8-53AC-49C6-A29D-218654568C8B",
-            "https://www.amazon.in/MILEAGE-FML0-ML38B20L-Battery-warranty-Pro-Rata/dp/B0CC2TVBF6"
-          ]
+          "availability": "In Stock"
         },
         {
           "id": "ac003",
@@ -238,8 +233,8 @@
           "warranty": "6 months",
           "availability": "In Stock",
           "images": [
-            "https://www.amazon.com/TLH-Trendy-Elegance-Compatible-Color-Universal/dp/B0825FG48V",
-            "https://covercraft.com/c/seat-covers"
+            "https://m.media-amazon.com/images/I/71IVuzyEs6L.jpg",
+            "https://m.media-amazon.com/images/I/81EF+Ipn36L.jpg"
           ]
         }
       ]
@@ -267,10 +262,10 @@
   ],
   "shop_info": {
     "name": "Laxman Auto Parts & Accessories",
-    "address": "123 Main Road, Auto Market, Delhi, India",
-    "phone": "+91-9876543210",
+    "address": "Shop 12 and 13, Plot 226/227, Rammillan G Shukla Marg, Namdev Koli Marg, Sion, Mumbai, Maharashtra 400022",
+    "phone": "098203 55265",
     "email": "info@laxmanautoparts.com",
-    "hours": "Monday to Saturday: 9:00 AM - 8:00 PM, Sunday: 10:00 AM - 6:00 PM",
+    "hours": "Monday Closed, Tuesday to Sunday 10:00 AM - 9:00 PM",
     "payment_methods": ["Cash", "UPI", "Credit Card", "Debit Card"],
     "delivery": "Free delivery for orders above ₹2,000 within 10km radius"
   }

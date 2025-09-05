@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { ChatHeader } from "./ChatHeader";
 import { ChatMessages } from "./ChatMessages";
 import { ChatInput } from "./ChatInput";
+import { DemoMarquee } from "./DemoMarquee";
 import { useChat } from "@/hooks/useChat";
 
 export function ChatContainer() {
@@ -16,6 +17,7 @@ export function ChatContainer() {
       <div className="flex-1 flex flex-col min-h-0">
         <Card className="flex-1 flex flex-col m-4 shadow-lg border-0 overflow-hidden chat-card">
           <ChatMessages messages={messages} />
+          <DemoMarquee />
           <ChatInput onSendMessage={sendMessage} isLoading={isLoading} />
         </Card>
       </div>

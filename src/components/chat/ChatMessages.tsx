@@ -54,8 +54,8 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
                       This demo includes the following categories:
                     </p>
                     <ul className="list-disc list-inside text-sm space-y-1">
-                      {Object.values((carPartsData as any).categories).map(
-                        (c: any) => (
+                      {Object.values((carPartsData as { categories: Record<string, { name: string }> }).categories).map(
+                        (c: { name: string }) => (
                           <li key={c.name} className="truncate">
                             {c.name}
                           </li>
@@ -72,9 +72,9 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
                     <div className="text-sm">
                       {(() => {
                         const compat = new Set<string>();
-                        Object.values((carPartsData as any).categories).forEach(
-                          (cat: any) => {
-                            (cat.items || []).forEach((it: any) => {
+                        Object.values((carPartsData as { categories: Record<string, { items?: { compatibility?: string[] }[] }> }).categories).forEach(
+                          (cat: { items?: { compatibility?: string[] }[] }) => {
+                            (cat.items || []).forEach((it: { compatibility?: string[] }) => {
                               (it.compatibility || []).forEach((v: string) =>
                                 compat.add(v)
                               );
@@ -99,7 +99,7 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
                       Available services included in this demo:
                     </p>
                     <ul className="list-disc list-inside text-sm space-y-1">
-                      {((carPartsData as any).services || []).map((s: any) => (
+                      {((carPartsData as { services?: { name: string; price?: string; availability?: string }[] }).services || []).map((s: { name: string; price?: string; availability?: string }) => (
                         <li key={s.name}>
                           {s.name} —{" "}
                           <span className="text-xs text-gray-300">
