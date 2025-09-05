@@ -34,13 +34,13 @@ export function MessageBubble({ message }: MessageBubbleProps) {
 
       <Card
         className={cn(
-          "px-4 py-3 max-w-[80%] shadow-sm",
+          "px-4 py-2 max-w-[70%] shadow-sm relative gap-2",
           isUser
             ? "bg-[rgba(36,83,72,1)] text-white border-transparent"
             : "bg-[rgba(61,60,63,1)] text-white border-transparent"
         )}
       >
-        <div className="text-sm whitespace-pre-wrap break-words text-white">
+        <div className="text-sm whitespace-pre-wrap break-words text-white mb-0">
           {message.content}
         </div>
         {message.imageUrl && (
@@ -54,7 +54,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
         )}
         <div
           className={cn(
-            "message-timestamp mt-2",
+            "message-timestamp mt-0 text-xs leading-none",
             isUser ? "text-[rgba(36,83,72,0.85)]" : "text-gray-300"
           )}
         >
