@@ -28,7 +28,11 @@ export function MessageBubble({ message }: MessageBubbleProps) {
               : "bg-[rgba(61,60,63,1)] text-white"
           )}
         >
-          {isUser ? <User className="w-3 h-3 sm:w-4 sm:h-4" /> : <Bot className="w-3 h-3 sm:w-4 sm:h-4" />}
+          {isUser ? (
+            <User className="w-3 h-3 sm:w-4 sm:h-4" />
+          ) : (
+            <Bot className="w-3 h-3 sm:w-4 sm:h-4" />
+          )}
         </AvatarFallback>
       </Avatar>
 

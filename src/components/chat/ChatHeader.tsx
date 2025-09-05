@@ -17,7 +17,9 @@ export function ChatHeader({ onReset, messageCount }: ChatHeaderProps) {
           <Settings className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
         </div>
         <div>
-          <h1 className="font-semibold text-base sm:text-lg">Laxman Auto Parts</h1>
+          <h1 className="font-semibold text-base sm:text-lg">
+            Laxman Auto Parts
+          </h1>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
             <span className="text-xs sm:text-sm text-gray-200">Online</span>

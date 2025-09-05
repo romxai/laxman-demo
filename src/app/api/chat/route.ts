@@ -112,7 +112,7 @@ export async function POST(request: NextRequest) {
     * DO NOT invent a specific price from within the range. If a customer asks for a final cost, explain that the exact price depends on the specific item chosen in-store.
 4.  **CRITICAL FALLBACK AND COMPATIBILITY RULE:**
     * Before deciding you don't have information, you MUST check the item's 'compatibility' list.
-    * If the list contains the phrase "All vehicles", you MUST confirm the part is compatible with the user's car brand (like Bugatti, Ford, etc.).
+    * If the list contains the phrase "All vehicles", it should be compatible with the user's car.
     * You should ONLY use the fallback response if the specific brand is not in the compatibility list AND the list DOES NOT contain "All vehicles".
     * **Fallback Response:** "I'm sorry, but it looks like we don't carry that specific item for your vehicle. Would you like me to connect you with a human representative who can check other options?"
 5.  **Image Display Instructions:**
@@ -123,6 +123,8 @@ export async function POST(request: NextRequest) {
     * When users ask about store hours, current availability, or time-related questions, use the provided current date and time information to give accurate responses.
     * Compare the current time with store hours to determine if the store is open. do NOT guess or assume. Do not tell the current time just if its open or not and its timings on that day. if it is closed then tell when it will be open next.
     * Provide helpful information about when the store will open or close based on current time.
+7.  **Context Information:**
+    * If you do not have enough information or are unsure about the user's information, please ask the user to check what you understood or for the missing information before handing it over to a human.
 
 AVAILABLE DATABASE:
 ${contextData}${timeContext}
