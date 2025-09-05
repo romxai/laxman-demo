@@ -52,6 +52,33 @@ export function MessageBubble({ message }: MessageBubbleProps) {
             />
           </div>
         )}
+        {message.imageUrls && message.imageUrls.length > 0 && (
+          <div
+            className="mt-2 grid gap-2"
+            style={{
+              gridTemplateColumns: `repeat(${message.imageUrls.length}, minmax(0, 1fr))`,
+            }}
+          >
+            {message.imageUrls.map((url, i) => (
+              <a
+                key={url + i}
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                className="block"
+              >
+                <div className="w-full h-40 bg-gray-800 rounded overflow-hidden flex items-center justify-center">
+                  <img
+                    src={url}
+                    loading="lazy"
+                    alt={`image-${i}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </a>
+            ))}
+          </div>
+        )}
         <div
           className={cn(
             "message-timestamp mt-0 text-xs leading-none",

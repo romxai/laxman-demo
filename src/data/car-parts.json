@@ -12,7 +12,11 @@
           "description": "High-quality air filters for better engine performance and fuel efficiency",
           "compatibility": ["Maruti", "Hyundai", "Tata", "Honda", "Toyota"],
           "warranty": "6 months to 1 year",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.boschautoparts.com/o/commerce-media/accounts/-1/images/2230055",
+            "https://res.cloudinary.com/knfilters-com/image/upload/c_lpad,dpr_2.0,f_auto,h_540,q_auto,w_540/v1/media/catalog/product/3/3/33-3170.jpg?_i=AB"
+          ]
         },
         {
           "id": "ep002",
@@ -29,7 +33,11 @@
             "Ford"
           ],
           "warranty": "6 months",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.boschautoparts.com/documents/647135/1488064/PremiumOil3_PDP_Carousel.jpg",
+            "https://www.mann-filter.com/content/dam/mann-filter/pim-assets/product-image/WK_12_003.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg"
+          ]
         },
         {
           "id": "ep003",
@@ -39,7 +47,11 @@
           "description": "High-performance spark plugs for better ignition and fuel efficiency",
           "compatibility": ["Maruti", "Hyundai", "Honda", "Toyota"],
           "warranty": "1 year",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.ngk.com/spark-plugs-ngk",
+            "https://www.boschautoparts.com/g/spark-plugs"
+          ]
         },
         {
           "id": "ep004",
@@ -49,7 +61,11 @@
           "description": "Premium engine oils for optimal engine protection and performance",
           "compatibility": ["All vehicles"],
           "warranty": "As per manufacturer",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.castrol.com/en_in/india/home/products/our-brands/automotive/edge.html",
+            "https://www.mobil.com/en/lubricants/for-personal-vehicles/our-products/motor-oils"
+          ]
         }
       ]
     },
@@ -65,7 +81,11 @@
           "description": "High-quality brake pads for reliable stopping power and safety",
           "compatibility": ["Maruti", "Hyundai", "Tata", "Honda", "Toyota"],
           "warranty": "6 months to 1 year",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.boschautoparts.com/g/brakes",
+            "https://www.brembo.com/en"
+          ]
         },
         {
           "id": "bp002",
@@ -75,7 +95,11 @@
           "description": "Premium brake discs for consistent braking performance",
           "compatibility": ["Maruti", "Hyundai", "Honda", "Toyota"],
           "warranty": "1 year",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.brembo.com/en/solutions/for-your-car/sport-disc",
+            "https://www.amazon.com/Brembo-09-A130-10-Front-Brake-Disc/dp/B00DZL4P0W"
+          ]
         },
         {
           "id": "bp003",
@@ -85,7 +109,11 @@
           "description": "DOT 3 and DOT 4 brake fluids for hydraulic brake systems",
           "compatibility": ["All vehicles"],
           "warranty": "2 years unopened",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.boschautoparts.com/g/brakes",
+            "https://www.castrol.com/en_in/india/home.html"
+          ]
         }
       ]
     },
@@ -101,7 +129,8 @@
           "description": "Premium shock absorbers for better ride comfort and vehicle control",
           "compatibility": ["Maruti", "Hyundai", "Tata", "Honda", "Toyota"],
           "warranty": "1-2 years",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": ["https://www.monroe.com/", "https://www.kyb.com/"]
         },
         {
           "id": "sp002",
@@ -111,7 +140,11 @@
           "description": "High-quality coil springs for proper vehicle height and load support",
           "compatibility": ["Maruti", "Hyundai", "Honda", "Toyota"],
           "warranty": "1 year",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://eibach.com/",
+            "https://www.amazon.com/Eibach-1000-250-0375-I-D-Coil-Over-Spring/dp/B003TPHAZQ"
+          ]
         }
       ]
     },
@@ -127,7 +160,11 @@
           "description": "Maintenance-free car batteries with long life and reliable performance",
           "compatibility": ["All vehicles"],
           "warranty": "18 months to 4 years",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.exidecare.com/find-exide/batteries-for-car-suv-muv",
+            "https://www.amaron.com/passenger-vehicles"
+          ]
         },
         {
           "id": "elp002",
@@ -137,7 +174,11 @@
           "description": "High-quality alternators for reliable charging system",
           "compatibility": ["Maruti", "Hyundai", "Tata", "Honda", "Toyota"],
           "warranty": "1 year",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.boschautoparts.com/g/starters-and-alternators",
+            "https://www.densoproducts.com/alternators-denso"
+          ]
         },
         {
           "id": "elp003",
@@ -147,7 +188,11 @@
           "description": "Halogen, LED, and HID headlight bulbs for better visibility",
           "compatibility": ["All vehicles"],
           "warranty": "6 months to 2 years",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.usa.philips.com/c-m-au/car-lights/headlight-bulbs/halogen",
+            "https://www.osram.com/ecat/Halogen%20headlight%20lamps-Car%20lighting-Automotive/com/en/GPS01_1056956/"
+          ]
         }
       ]
     },
@@ -163,7 +208,11 @@
           "description": "Weather-resistant car floor mats for interior protection",
           "compatibility": ["All vehicles"],
           "warranty": "6 months",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://3dmatsusa.com/",
+            "https://www.amazon.com/Customized-Mats-Perfect-Carpet-Diamond-All-Weather-Protection/dp/B0CSVLMCGX"
+          ]
         },
         {
           "id": "ac002",
@@ -173,7 +222,11 @@
           "description": "Water-resistant car covers for exterior protection",
           "compatibility": ["All vehicles"],
           "warranty": "1 year",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.amazon.in/stores/AutoFurnish/page/B39102E8-53AC-49C6-A29D-218654568C8B",
+            "https://www.amazon.in/MILEAGE-FML0-ML38B20L-Battery-warranty-Pro-Rata/dp/B0CC2TVBF6"
+          ]
         },
         {
           "id": "ac003",
@@ -183,7 +236,11 @@
           "description": "Premium seat covers in various materials and designs",
           "compatibility": ["All vehicles"],
           "warranty": "6 months",
-          "availability": "In Stock"
+          "availability": "In Stock",
+          "images": [
+            "https://www.amazon.com/TLH-Trendy-Elegance-Compatible-Color-Universal/dp/B0825FG48V",
+            "https://covercraft.com/c/seat-covers"
+          ]
         }
       ]
     }

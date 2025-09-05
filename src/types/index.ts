@@ -5,6 +5,7 @@ export interface Message {
   timestamp: Date;
   type?: "text" | "image";
   imageUrl?: string;
+  imageUrls?: string[];
 }
 
 export interface CarPart {

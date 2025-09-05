@@ -43,7 +43,8 @@ export function useChat() {
           role: "assistant",
           content: data.message,
           timestamp: new Date(),
-          type: "text",
+          type: data.imageUrls && data.imageUrls.length > 0 ? "image" : "text",
+          imageUrls: data.imageUrls || [],
         };
 
         setMessages((prev) => [...prev, assistantMessage]);
