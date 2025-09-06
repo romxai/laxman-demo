@@ -49,6 +49,44 @@ export interface CarPartsDatabase {
   shop_info: ShopInfo;
 }
 
+// New types for the hybrid chatbot system
+export interface ConversationSlots {
+  vehicle?: {
+    make?: string;
+    model?: string;
+    year?: number;
+  };
+  product_type?: string;
+  color?: string;
+  intent?: "search_product" | "get_info" | "clarify" | "general";
+  missing_info?: string[];
+  confidence?: "high" | "medium" | "low";
+}
+
+export interface Product {
+  sku: string;
+  name: string;
+  brand: string | null;
+  category: string | null;
+  colour: string | null;
+  compatibility: Array<{
+    make: string;
+    model: string;
+    year_from: number | null;
+    year_to: number | null;
+    notes: string;
+  }>;
+  universal: boolean;
+}
+
+export interface NLUReponse {
+  slots: ConversationSlots;
+  needs_clarification: boolean;
+  clarification_question?: string;
+  raw_intent: string;
+  extracted_entities: Record<string, any>;
+}
+
 export interface ChatContextType {
   messages: Message[];
   isLoading: boolean;

@@ -1,4 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🤖 Hybrid Chatbot Architecture
+
+This project implements a sophisticated **Hybrid Chatbot System** that combines the power of Google's Gemini AI with MongoDB for deterministic product retrieval.
+
+### Architecture Overview
+
+The system uses a **3-layer architecture** for optimal performance and accuracy:
+
+#### 1. 🧠 NLU Layer (`/api/chat/nlu`)
+- **Purpose**: Natural Language Understanding and Intent Classification
+- **Technology**: Google Gemini 2.0 Flash
+- **Features**:
+  - Extracts vehicle information (make, model, year)
+  - Identifies product categories and preferences
+  - Handles Hinglish and conversational language
+  - Maintains conversation context
+  - Generates clarification questions when needed
+
+#### 2. 🔍 Retrieval Layer (`/api/chat/retrieve`)
+- **Purpose**: Deterministic product search from MongoDB
+- **Technology**: MongoDB Atlas with optimized queries
+- **Features**:
+  - Vehicle-specific product matching
+  - Universal product fallback
+  - Year-based compatibility filtering
+  - Color and category filtering
+  - Performance-optimized indexing
+
+#### 3. 💬 Response Layer (`/api/chat/respond`)
+- **Purpose**: Natural language response generation
+- **Technology**: Google Gemini 2.0 Flash
+- **Features**:
+  - Conversational product recommendations
+  - Clear compatibility explanations
+  - SKU code inclusion
+  - Suggested follow-up actions
+
+#### 4. 🎯 Hybrid Orchestrator (`/api/chat/hybrid`)
+- **Purpose**: Coordinates all three layers
+- **Features**:
+  - Sequential processing pipeline
+  - Error handling and fallbacks
+  - Debug information for development
+  - Conversation flow management
+
+### Key Benefits
+
+✅ **Natural Language Flexibility**: Handles Hinglish, spelling variations, and conversational input
+✅ **Deterministic Retrieval**: No hallucinations - only returns products that exist in database
+✅ **Context Awareness**: Maintains conversation state across messages
+✅ **Clarification Logic**: Asks targeted questions when information is missing
+✅ **Performance Optimized**: Fast MongoDB queries with proper indexing
+✅ **Multilingual Support**: Works with Hindi-English mix naturally
+
+### API Endpoints
+
+- `POST /api/chat/hybrid` - Main chatbot endpoint (recommended)
+- `POST /api/chat/nlu` - NLU processing only
+- `POST /api/chat/retrieve` - Product retrieval only
+- `POST /api/chat/respond` - Response generation only
+- `POST /api/chat` - Legacy endpoint (now uses hybrid system)
+
+### Testing the System
+
+Run the comprehensive test suite:
+
+```bash
+npm run test-hybrid
+```
+
+This will test:
+- Individual components (NLU, Retrieval, Response)
+- End-to-end hybrid flow
+- Various query types and edge cases
+
+### Example Conversations
+
+**User**: "मेरे ertiga के लिए mats chahiye"
+**Bot**: "आपके Maruti Ertiga के लिए ये mats available हैं:
+- NOIRE INFINITY Boot for ERTIGA (SKU: GMA_INBM_005)
+- NOIRE INFINITY for Maruti ERTIGA (SKU: GMA_INF_130)
+
+कौन सा color prefer करेंगे - Black या Beige?"
+
+**User**: "2020 model hai"
+**Bot**: "ठीक है, आपके 2020 Maruti Ertiga के लिए compatible mats:
+- NOIRE INFINITY for Maruti ERTIGA (SKU: GMA_INF_130) - Black color
+- NOIRE INFINITY Boot for ERTIGA (SKU: GMA_INBM_005) - Black color
+
+क्या आप कोई specific color चाहते हैं?"
+
+### Data Structure
+
+**Products Collection**:
+```json
+{
+  "sku": "GMA_AD_004",
+  "name": "GoMechanic Accessories Olympus Smart Fit Android Screen",
+  "brand": "GoMechanic",
+  "category": "Android Screen",
+  "colour": null,
+  "compatibility": [
+    {
+      "make": "Hyundai",
+      "model": "Creta",
+      "year_from": null,
+      "year_to": null,
+      "notes": ""
+    }
+  ],
+  "universal": false
+}
+```
+
+**Vehicles Collection**:
+```json
+{
+  "make": "Hyundai",
+  "model": "Creta",
+  "aliases": ["creta", "kreta"]
+}
+```
+
+### Environment Variables
+
+Add to `.env.local`:
+```
+GEMINI_API_KEY=your_gemini_api_key_here
+MONGODB_URI=your_mongodb_atlas_connection_string
+```
 
 ## Data Upload to MongoDB Atlas
 
