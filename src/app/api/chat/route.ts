@@ -28,6 +28,30 @@ interface Product {
   universal: boolean;
 }
 
+interface ProductSearchArgs {
+  make?: string;
+  model?: string;
+  year?: number;
+  product_type?: string;
+  color?: string;
+  search_universal?: boolean;
+}
+
+interface MongoQuery {
+  $and: Array<Record<string, unknown>>;
+}
+
+interface CompatibilityQuery extends Record<string, unknown> {
+  "compatibility.make": { $regex: RegExp };
+  "compatibility.model": { $regex: RegExp };
+  "compatibility.$or"?: Array<Record<string, unknown>>;
+}
+
+interface ChatMessage {
+  role: "user" | "assistant";
+  content: string;
+}
+
 // --- MAIN API HANDLER ---
 export async function POST(request: NextRequest) {
   try {
@@ -141,14 +165,14 @@ export async function POST(request: NextRequest) {
 
 // --- HELPER FUNCTIONS ---
 
-async function searchDatabase(args: any): Promise<Product[]> {
+async function searchDatabase(args: ProductSearchArgs): Promise<Product[]> {
   const client = new MongoClient(MONGODB_URI);
   try {
     await client.connect();
     const collection = client
       .db(DATABASE_NAME)
       .collection<Product>(PRODUCTS_COLLECTION);
-    let query: any = { $and: [] };
+    const query: MongoQuery = { $and: [] };
 
     // This allows searching by either category OR name, which is more flexible.
     if (args.product_type) {
@@ -163,7 +187,7 @@ async function searchDatabase(args: any): Promise<Product[]> {
     if (args.search_universal) {
       query.$and.push({ universal: true });
     } else if (args.make && args.model) {
-      const compatibilityQuery: any = {
+      const compatibilityQuery: CompatibilityQuery = {
         "compatibility.make": { $regex: new RegExp(`^${args.make}$`, "i") },
         "compatibility.model": { $regex: new RegExp(`^${args.model}$`, "i") },
       };
@@ -227,15 +251,15 @@ Your main goal is to help users find car parts. To do this, you must use the \`p
     - **If NO universal products are found**: Apologize and state that the product is likely out of stock and then ask how else you can assist or if they would like to talk to a human agent.
 6.  **Handle Greetings**: For simple greetings like "hello", provide a warm welcome and ask how you can help. DO NOT call the tool.
 7.  **Handle Topic Changes**: If the user was asking about mats and then says "I also want headlights", forget about the mats and focus entirely on finding headlights.
-8.  **Product Confirmation**: If the user selects a product from a list you provided (e.g., "Vanilla Delight"), confirm their choice and then tell them they will be handed over to a human to complete the purchase.
+8.  **Product Confirmation**: If the user selects a product from a list you provided (e.g., "Vanilla Delight"), ask them to confirm their choice and then tell them they will be handed over to a human to complete the purchase.
 9.  **Avoid Redundancy**: If the user has already agreed to see universal products after a specific search failed, DO NOT ask them again if they want to see universal options. Instead, directly show them the universal products.
 **TONE:**
 - Be conversational and helpful. Use a natural Hindi-English mix (Hinglish) only if the user does.
 - Be concise. Do not ask for unnecessary details. If they say "any led headlight," show them the available LED headlights.`;
 }
 
-function formatHistoryForGemini(history: any[]): Content[] {
-  return history.map((msg: any) => ({
+function formatHistoryForGemini(history: ChatMessage[]): Content[] {
+  return history.map((msg: ChatMessage) => ({
     role: msg.role === "assistant" ? "model" : "user",
     parts: [{ text: msg.content }],
   }));

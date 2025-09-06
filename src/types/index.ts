@@ -84,7 +84,7 @@ export interface NLUReponse {
   needs_clarification: boolean;
   clarification_question?: string;
   raw_intent: string;
-  extracted_entities: Record<string, any>;
+  extracted_entities: Record<string, string | number | boolean>;
 }
 
 export interface ChatContextType {
