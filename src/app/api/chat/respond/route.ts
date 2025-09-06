@@ -23,12 +23,8 @@ interface Product {
 interface ResponseRequest {
   slots: ConversationSlots;
   products: Product[];
-  conversation_history: Array<{
-    role: string;
-    content: string;
-  }>;
-  needs_clarification?: boolean;
-  clarification_question?: string;
+  conversation_history: Array<{ role: string; content: string }>;
+  search_context: "greeting" | "product_search" | "universal_search_fallback";
 }
 
 interface ResponseResponse {
@@ -43,8 +39,7 @@ export async function POST(request: NextRequest) {
       slots,
       products,
       conversation_history,
-      needs_clarification,
-      clarification_question,
+      search_context,
     }: ResponseRequest = await request.json();
 
     if (!process.env.GEMINI_API_KEY) {
@@ -54,22 +49,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // If clarification is needed, return the clarification question
-    if (needs_clarification && clarification_question) {
-      return NextResponse.json({
-        message: clarification_question,
-        suggested_actions: ["provide_missing_info"],
-      });
-    }
-
-    // Build conversation context
     const conversationContext = conversation_history
       .map((msg: any) => `${msg.role}: ${msg.content}`)
       .join("\n");
 
-    // Format products for the prompt
     const productsContext =
-      products.length > 0
+      products && products.length > 0
         ? products
             .map(
               (product, index) =>
@@ -88,7 +73,7 @@ export async function POST(request: NextRequest) {
                           (comp) =>
                             `${comp.make} ${comp.model}${
                               comp.year_from ? ` (${comp.year_from}` : ""
-                            }${comp.year_to ? `-${comp.year_to})` : ""}`
+                            }${comp.year_to ? `-${comp.year_to})` : ")"}`
                         )
                         .join(", ")
                 }
@@ -97,77 +82,54 @@ export async function POST(request: NextRequest) {
             .join("\n")
         : "No products found matching the criteria.";
 
-    const systemPrompt = `You are Laxman Auto Parts chatbot assistant. You help customers find auto parts and accessories for their vehicles.
+    const systemPrompt = `You are Laxman Auto Parts chatbot assistant, a friendly and expert guide.
 
-**YOUR ROLE:**
-- Be friendly, conversational, and helpful
-- Use natural Hindi-English mix if the user does, else use clear English
-- Focus on product recommendations and fitment
-- Never mention SKU codes for products
-- Explain compatibility clearly
-- Suggest alternatives when needed
+**YOUR TONE:**
+- Be friendly, conversational, and helpful. Use a natural Hindi-English mix (Hinglish) only if the user does.
 
-**RESPONSE GUIDELINES:**
-1. **Product Recommendations:**
-   - List products with their SKU, name, and key features
-   - Explain why each product fits the customer's needs
-   - Mention color options if available
-   - Highlight universal vs vehicle-specific products
+**CORE LOGIC:**
+1.  **Analyze the \`search_context\` and the \`productsContext\` to decide your action.**
+2.  **DO NOT ASK FOR MORE DETAILS IF PRODUCTS ARE AVAILABLE.** If the user gives a general request (like "any led headlight") and you have relevant products in \`productsContext\`, you MUST present them immediately. Do not ask clarifying questions about brightness or color if the user hasn't specified a preference.
+3.  **Always end with a clear, actionable question.**
 
-2. **Fitment Information:**
-   - Clearly state if product is universal or vehicle-specific
-   - Mention year compatibility when relevant
-   - Explain any fitment notes or restrictions
+**RESPONSE GUIDELINES based on SEARCH CONTEXT:**
 
-3. **Natural Conversation:**
-   - Use conversational language
-   - Ask follow-up questions naturally
-   - Offer additional help or alternatives
+- **If \`search_context\` is "greeting"**: Provide a warm, brief welcome and ask how you can help.
 
-4. **Product Details:**
-   - Always include SKU codes
-   - Mention brands when available
-   - Explain product categories clearly
+- **If \`search_context\` is "product_search"**:
+    - **If Products ARE Found**: Acknowledge the user's specific request ("For your Taigun, I found...") and present the items. If more than 3, summarize.
+    - **If NO Products are Found**: Apologize, state what you looked for ("I couldn't find specific headlights for a Taigun."), and then suggest a helpful next step ("Would you like to see our universal LED headlights instead?").
+
+- **If \`search_context\` is "universal_search_fallback"**:
+    - **If Products ARE Found**: Acknowledge the user's agreement ("Great! Here are the universal options we have..."). Do NOT repeat why the specific search failed. Present the products.
+    - **If NO Products are Found**: Apologize and say something like: "It seems we're currently out of stock for universal mats. Can I help you look for another product?"
 
 **AVAILABLE PRODUCTS:**
 ${productsContext}
 
-**CONVERSATION CONTEXT:**
+**CONVERSATION CONTAXT:**
 ${conversationContext}
 
 **CURRENT USER INTENT:**
 ${JSON.stringify(slots, null, 2)}
 
-Generate a natural, helpful response based on the available products and user intent. Keep it conversational and focus on helping the customer find the right product.`;
+Generate a natural and helpful response based on all the above instructions.`;
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash",
+      model: "gemini-1.5-flash",
       systemInstruction: systemPrompt,
     });
 
-    const userQuery = `User is looking for: ${
-      slots.product_type || "products"
-    } ${
-      slots.vehicle
-        ? `for ${slots.vehicle.make} ${slots.vehicle.model}${
-            slots.vehicle.year ? ` ${slots.vehicle.year}` : ""
-          }`
-        : ""
-    }${slots.color ? ` in ${slots.color} color` : ""}`;
-
-    const result = await model.generateContent(userQuery);
+    const result = await model.generateContent(
+      "Generate the response based on the provided context and instructions."
+    );
     const response = await result.response;
-    let message = response.text();
+    const message = response.text();
 
-    // Extract any image indicators (for future use)
-    const imageUrls: string[] = [];
-
-    // Generate suggested actions based on the response
     const suggestedActions = generateSuggestedActions(slots, products);
 
     const responseObj: ResponseResponse = {
       message: message.trim(),
-      image_urls: imageUrls.length > 0 ? imageUrls : undefined,
       suggested_actions: suggestedActions,
     };
 
@@ -186,27 +148,18 @@ function generateSuggestedActions(
   products: Product[]
 ): string[] {
   const actions: string[] = [];
-
-  if (products.length > 0) {
+  if (!slots) {
+    return actions;
+  }
+  if (products && products.length > 0) {
     actions.push("view_product_details");
-
-    // Check if there are color options
     const colors = [...new Set(products.map((p) => p.colour).filter((c) => c))];
     if (colors.length > 1) {
       actions.push("filter_by_color");
     }
-
-    // Check if there are universal options
-    const hasUniversal = products.some((p) => p.universal);
-    const hasSpecific = products.some((p) => !p.universal);
-    if (hasUniversal && hasSpecific) {
-      actions.push("show_universal_only");
-    }
   }
-
   if (slots.intent === "search_product") {
     actions.push("ask_for_more_details");
   }
-
   return actions;
 }

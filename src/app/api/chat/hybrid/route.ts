@@ -49,21 +49,65 @@ export async function POST(request: NextRequest) {
     const nluResult = await nluResponse.json();
     console.log("✅ NLU Result:", nluResult);
 
-    // Check if clarification is needed
+    // **CORRECTED LOGIC: Handle Greetings**
+    if (nluResult.slots?.intent === "general_greeting") {
+      console.log("💡 Detected a greeting. Skipping retrieval.");
+      const responseRequest = await fetch(
+        `${
+          process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"
+        }/api/chat/respond`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            slots: nluResult.slots,
+            products: [], // No products to show
+            conversation_history,
+            search_context: "greeting", // Pass a specific context for greetings
+          }),
+        }
+      );
+      const greetingResult = await responseRequest.json();
+      return NextResponse.json({
+        ...greetingResult,
+        debug_info: { nlu_result: nluResult },
+      });
+    }
+
     if (nluResult.needs_clarification) {
       return NextResponse.json({
         message:
           nluResult.clarification_question ||
           "Could you please provide more details?",
         suggested_actions: ["provide_missing_info"],
-        debug_info: {
-          nlu_result: nluResult,
-        },
+        debug_info: { nlu_result: nluResult },
       });
     }
 
+    let retrievalSlots = { ...nluResult.slots };
+    let search_context: "product_search" | "universal_search_fallback" =
+      "product_search";
+
+    const lastAssistantMessage =
+      conversation_history.filter((msg: any) => msg.role === "assistant").pop()
+        ?.content || "";
+    const isAffirmative =
+      /yes|ok|sure|what options|tell me|do you have|universal/i.test(message);
+
+    if (
+      nluResult.slots?.intent === "clarify" &&
+      /universal/i.test(lastAssistantMessage) &&
+      isAffirmative
+    ) {
+      console.log(
+        "💡 User agreed to universal search. Modifying retrieval slots."
+      );
+      retrievalSlots.vehicle = {};
+      search_context = "universal_search_fallback";
+    }
+
     // Step 2: Product Retrieval
-    console.log("🔍 Step 2: Retrieving products...");
+    console.log("🔍 Step 2: Retrieving products with slots:", retrievalSlots);
     const retrievalResponse = await fetch(
       `${
         process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"
@@ -74,8 +118,8 @@ export async function POST(request: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          slots: nluResult.slots,
-          limit: 5, // Limit results for better UX
+          slots: retrievalSlots,
+          limit: 10, // Increased limit to show more universal options if available
           include_universal: true,
         }),
       }
@@ -103,7 +147,7 @@ export async function POST(request: NextRequest) {
           slots: nluResult.slots,
           products: retrievalResult.products,
           conversation_history,
-          needs_clarification: false,
+          search_context: search_context,
         }),
       }
     );
@@ -115,7 +159,6 @@ export async function POST(request: NextRequest) {
     const responseResult = await responseRequest.json();
     console.log("✅ Response Generated:", responseResult);
 
-    // Combine results
     const finalResponse: HybridResponse = {
       message: responseResult.message,
       image_urls: responseResult.image_urls,
@@ -130,16 +173,10 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(finalResponse);
   } catch (error) {
     console.error("Error in hybrid chat API:", error);
-
-    // Fallback response
     return NextResponse.json(
       {
         message:
-          "I'm sorry, I'm having trouble processing your request right now. Could you please try rephrasing your question?",
-        suggested_actions: ["retry_request"],
-        debug_info: {
-          error: error instanceof Error ? error.message : "Unknown error",
-        },
+          "I'm sorry, I'm having trouble processing your request right now. Please try rephrasing.",
       },
       { status: 500 }
     );

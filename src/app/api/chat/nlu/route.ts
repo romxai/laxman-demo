@@ -11,7 +11,7 @@ export interface ConversationSlots {
   };
   product_type?: string;
   color?: string;
-  intent?: "search_product" | "get_info" | "clarify" | "general";
+  intent?: "search_product" | "get_info" | "clarify" | "general_greeting";
   missing_info?: string[];
   confidence?: "high" | "medium" | "low";
 }
@@ -59,6 +59,9 @@ const PRODUCT_CATEGORIES = [
   "PrismX LED",
   "Damping Sheet",
   "Car Care Kit",
+  "Wiper Blade",
+  "Headlight",
+  "LED",
 ];
 
 const COLORS = [
@@ -71,6 +74,7 @@ const COLORS = [
   "Brown",
   "Silver",
   "Green",
+  "Yellow",
 ];
 
 export async function POST(request: NextRequest) {
@@ -84,136 +88,64 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const systemPrompt = `You are an expert NLU (Natural Language Understanding) system for an Indian auto parts chatbot.
+    const systemPrompt = `You are a highly specialized Natural Language Understanding (NLU) engine. Your ONLY function is to extract structured data from the user's CURRENT message and output a single, valid JSON object.
 
-Your task is to extract structured information from user messages and maintain conversation context.
-
-**VEHICLE INFORMATION TO EXTRACT:**
-- Make: ${VEHICLE_MAKES.join(", ")}
-- Model: Extract the specific model name
-- Year: Extract the manufacturing year (usually 4 digits)
-
-**PRODUCT INFORMATION TO EXTRACT:**
-- Product Type: ${PRODUCT_CATEGORIES.join(", ")}
-- Color: ${COLORS.join(", ")}
+**CORE DIRECTIVE: FOCUS ON THE LATEST USER MESSAGE.**
+- The user's most recent message is the most important. If the user introduces a new topic (e.g., asks for "headlights" after discussing "mats"), you MUST discard the old topic and focus entirely on the new one. The final \`product_type\` slot must reflect the NEW topic.
+- Keep relevant context like the vehicle model if it's still applicable, but always update the primary search entity (\`product_type\`).
 
 **INTENT CLASSIFICATION:**
-- search_product: User wants to find/buy a product
-- get_info: User asking for information about products/services
-- clarify: User responding to a clarification question
-- general: General conversation or unclear intent
+- search_product: The user's primary goal is to find or buy a product.
+- get_info: The user is asking for general information.
+- clarify: The user is directly answering a question the assistant just asked (e.g., providing a year, or saying "yes").
+- general_greeting: The user is starting the conversation with a simple greeting like "hello", "hi".
 
-**RESPONSE FORMAT:**
-Return a JSON object with this exact structure:
-{
-  "slots": {
-    "vehicle": {
-      "make": "Hyundai",
-      "model": "Creta",
-      "year": 2020
-    },
-    "product_type": "Android Screen",
-    "color": "black",
-    "intent": "search_product",
-    "missing_info": ["year"],
-    "confidence": "high"
-  },
-  "needs_clarification": false,
-  "clarification_question": "Which year is your Hyundai Creta?",
-  "raw_intent": "user wants android screen for creta",
-  "extracted_entities": {
-    "vehicle_make": "Hyundai",
-    "vehicle_model": "Creta",
-    "product_category": "Android Screen"
-  }
-}
-
-**IMPORTANT RULES:**
-1. Handle Hinglish and mixed languages naturally
-2. Extract information even from incomplete sentences
-3. Use conversation history to fill missing slots
-4. Set needs_clarification=true if critical information is missing
-5. Be flexible with spelling variations and common abbreviations
-6. For vehicle models, handle common variations (e.g., "ertiga" = "Ertiga")
-7. If user mentions "screen", map to "Android Screen"
-8. If user mentions "mat" or "carpet", map to "Mats"
-9. If user mentions "speaker" or "music system", map to "Speaker"
-
-**CONVERSATION CONTEXT:**
-Use the conversation history to maintain context across messages. If previous messages contain information that fills current slots, include it in the response.
+**EXTRACTION RULES:**
+1.  Always prioritize extracting entities from the user's latest message.
+2.  Normalize product types: "screen" -> "Android Screen", "mat" -> "Mats", "led" -> "Lumiere LED". If the user says "headlight" and "led", the product_type should be "Lumiere LED".
+3.  If the intent is 'general_greeting', the "slots" object should only contain the intent. All other properties inside "slots" should be null.
 
 **CLARIFICATION LOGIC:**
-- If vehicle make/model is clear but year is missing, ask for year
-- If product type is clear but vehicle info is missing, ask for vehicle
-- If multiple interpretations possible, ask for clarification
-- Don't ask for non-critical information like color unless specifically needed
+- If the intent is 'search_product' but critical info (like a vehicle for a non-universal part) is missing, set \`needs_clarification\` to true and generate a polite \`clarification_question\`.
 
-Analyze this message and extract the structured information:`;
+**JSON OUTPUT SCHEMA (Strict):**
+You must conform to the NLUReponse interface and output ONLY the JSON object. The 'slots' property must always be present.`;
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash",
+      model: "gemini-1.5-flash",
       systemInstruction: systemPrompt,
+      generationConfig: {
+        responseMimeType: "application/json",
+      },
     });
 
-    // Build conversation context
     const conversationContext = conversation_history
       .map((msg: any) => `${msg.role}: ${msg.content}`)
       .join("\n");
 
-    const fullPrompt = `Conversation History:
+    const fullPrompt = `Conversation History (for context):
 ${conversationContext}
 
-Current Message: "${message}"
+Current User Message (this is your primary focus): "${message}"
 
-Extract structured information from the current message, using conversation history to fill any missing context.`;
+Extract structured information based on the user's current message, updating slots accordingly.`;
 
     const result = await model.generateContent(fullPrompt);
     const response = await result.response;
     const text = response.text();
 
-    // Parse the JSON response from Gemini
-    let parsedResponse: NLUReponse;
-    try {
-      // Clean the response text to extract JSON
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (!jsonMatch) {
-        throw new Error("No JSON found in response");
-      }
-
-      parsedResponse = JSON.parse(jsonMatch[0]);
-
-      // Validate the response structure
-      if (!parsedResponse.slots) {
-        parsedResponse.slots = {};
-      }
-
-      if (!parsedResponse.needs_clarification) {
-        parsedResponse.needs_clarification = false;
-      }
-    } catch (error) {
-      console.error("Error parsing Gemini NLU response:", error);
-      console.log("Raw response:", text);
-
-      // Fallback response
-      parsedResponse = {
-        slots: {
-          intent: "general",
-          confidence: "low",
-        },
-        needs_clarification: true,
-        clarification_question:
-          "I'm sorry, I didn't understand that clearly. Could you please rephrase your question?",
-        raw_intent: "unclear",
-        extracted_entities: {},
-      };
-    }
+    const parsedResponse: NLUReponse = JSON.parse(text);
 
     return NextResponse.json(parsedResponse);
   } catch (error) {
     console.error("Error in NLU API:", error);
-    return NextResponse.json(
-      { error: "Failed to process NLU request" },
-      { status: 500 }
-    );
+    const fallbackResponse: NLUReponse = {
+      slots: { intent: "general_greeting" },
+      needs_clarification: false,
+      clarification_question: "",
+      raw_intent: "fallback",
+      extracted_entities: {},
+    };
+    return NextResponse.json(fallbackResponse);
   }
 }
