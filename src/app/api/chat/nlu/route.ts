@@ -25,18 +25,52 @@ export interface NLUReponse {
 }
 
 const VEHICLE_MAKES = [
-  "Hyundai", "Maruti", "Toyota", "Honda", "Mahindra", "Tata", "Kia", "Ford",
-  "Renault", "Nissan", "Jeep", "Skoda", "Volkswagen", "MG", "Audi", "BMW"
+  "Hyundai",
+  "Maruti",
+  "Toyota",
+  "Honda",
+  "Mahindra",
+  "Tata",
+  "Kia",
+  "Ford",
+  "Renault",
+  "Nissan",
+  "Jeep",
+  "Skoda",
+  "Volkswagen",
+  "MG",
+  "Audi",
+  "BMW",
 ];
 
 const PRODUCT_CATEGORIES = [
-  "Android Screen", "Speaker", "Mats", "Car Charger", "Memory Foam",
-  "USB Cable", "Camera", "Tyre Inflator", "Vacuum Cleaner", "BTFM",
-  "Steering Cover", "Lumiere LED", "PrismX LED", "Damping Sheet", "Car Care Kit"
+  "Android Screen",
+  "Speaker",
+  "Mats",
+  "Car Charger",
+  "Memory Foam",
+  "USB Cable",
+  "Camera",
+  "Tyre Inflator",
+  "Vacuum Cleaner",
+  "BTFM",
+  "Steering Cover",
+  "Lumiere LED",
+  "PrismX LED",
+  "Damping Sheet",
+  "Car Care Kit",
 ];
 
 const COLORS = [
-  "Black", "White", "Red", "Blue", "Grey", "Beige", "Brown", "Silver", "Green"
+  "Black",
+  "White",
+  "Red",
+  "Blue",
+  "Grey",
+  "Beige",
+  "Brown",
+  "Silver",
+  "Green",
 ];
 
 export async function POST(request: NextRequest) {
@@ -156,7 +190,6 @@ Extract structured information from the current message, using conversation hist
       if (!parsedResponse.needs_clarification) {
         parsedResponse.needs_clarification = false;
       }
-
     } catch (error) {
       console.error("Error parsing Gemini NLU response:", error);
       console.log("Raw response:", text);
@@ -165,17 +198,17 @@ Extract structured information from the current message, using conversation hist
       parsedResponse = {
         slots: {
           intent: "general",
-          confidence: "low"
+          confidence: "low",
         },
         needs_clarification: true,
-        clarification_question: "I'm sorry, I didn't understand that clearly. Could you please rephrase your question?",
+        clarification_question:
+          "I'm sorry, I didn't understand that clearly. Could you please rephrase your question?",
         raw_intent: "unclear",
-        extracted_entities: {}
+        extracted_entities: {},
       };
     }
 
     return NextResponse.json(parsedResponse);
-
   } catch (error) {
     console.error("Error in NLU API:", error);
     return NextResponse.json(

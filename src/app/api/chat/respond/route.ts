@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
       products,
       conversation_history,
       needs_clarification,
-      clarification_question
+      clarification_question,
     }: ResponseRequest = await request.json();
 
     if (!process.env.GEMINI_API_KEY) {
@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
     if (needs_clarification && clarification_question) {
       return NextResponse.json({
         message: clarification_question,
-        suggested_actions: ["provide_missing_info"]
+        suggested_actions: ["provide_missing_info"],
       });
     }
 
@@ -68,22 +68,34 @@ export async function POST(request: NextRequest) {
       .join("\n");
 
     // Format products for the prompt
-    const productsContext = products.length > 0
-      ? products.map((product, index) =>
-          `Product ${index + 1}:
+    const productsContext =
+      products.length > 0
+        ? products
+            .map(
+              (product, index) =>
+                `Product ${index + 1}:
 - SKU: ${product.sku}
 - Name: ${product.name}
-- Brand: ${product.brand || 'N/A'}
-- Category: ${product.category || 'N/A'}
-- Color: ${product.colour || 'N/A'}
-- Universal: ${product.universal ? 'Yes' : 'No'}
-- Compatibility: ${product.universal ? 'All vehicles' :
-    product.compatibility.map(comp =>
-      `${comp.make} ${comp.model}${comp.year_from ? ` (${comp.year_from}` : ''}${comp.year_to ? `-${comp.year_to})` : ''}`
-    ).join(', ')}
+- Brand: ${product.brand || "N/A"}
+- Category: ${product.category || "N/A"}
+- Color: ${product.colour || "N/A"}
+- Universal: ${product.universal ? "Yes" : "No"}
+- Compatibility: ${
+                  product.universal
+                    ? "All vehicles"
+                    : product.compatibility
+                        .map(
+                          (comp) =>
+                            `${comp.make} ${comp.model}${
+                              comp.year_from ? ` (${comp.year_from}` : ""
+                            }${comp.year_to ? `-${comp.year_to})` : ""}`
+                        )
+                        .join(", ")
+                }
 `
-        ).join('\n')
-      : 'No products found matching the criteria.';
+            )
+            .join("\n")
+        : "No products found matching the criteria.";
 
     const systemPrompt = `You are Laxman Auto Parts chatbot assistant. You help customers find auto parts and accessories for their vehicles.
 
@@ -133,7 +145,15 @@ Generate a natural, helpful response based on the available products and user in
       systemInstruction: systemPrompt,
     });
 
-    const userQuery = `User is looking for: ${slots.product_type || 'products'} ${slots.vehicle ? `for ${slots.vehicle.make} ${slots.vehicle.model}${slots.vehicle.year ? ` ${slots.vehicle.year}` : ''}` : ''}${slots.color ? ` in ${slots.color} color` : ''}`;
+    const userQuery = `User is looking for: ${
+      slots.product_type || "products"
+    } ${
+      slots.vehicle
+        ? `for ${slots.vehicle.make} ${slots.vehicle.model}${
+            slots.vehicle.year ? ` ${slots.vehicle.year}` : ""
+          }`
+        : ""
+    }${slots.color ? ` in ${slots.color} color` : ""}`;
 
     const result = await model.generateContent(userQuery);
     const response = await result.response;
@@ -148,11 +168,10 @@ Generate a natural, helpful response based on the available products and user in
     const responseObj: ResponseResponse = {
       message: message.trim(),
       image_urls: imageUrls.length > 0 ? imageUrls : undefined,
-      suggested_actions: suggestedActions
+      suggested_actions: suggestedActions,
     };
 
     return NextResponse.json(responseObj);
-
   } catch (error) {
     console.error("Error in response generation API:", error);
     return NextResponse.json(
@@ -162,21 +181,24 @@ Generate a natural, helpful response based on the available products and user in
   }
 }
 
-function generateSuggestedActions(slots: ConversationSlots, products: Product[]): string[] {
+function generateSuggestedActions(
+  slots: ConversationSlots,
+  products: Product[]
+): string[] {
   const actions: string[] = [];
 
   if (products.length > 0) {
     actions.push("view_product_details");
 
     // Check if there are color options
-    const colors = [...new Set(products.map(p => p.colour).filter(c => c))];
+    const colors = [...new Set(products.map((p) => p.colour).filter((c) => c))];
     if (colors.length > 1) {
       actions.push("filter_by_color");
     }
 
     // Check if there are universal options
-    const hasUniversal = products.some(p => p.universal);
-    const hasSpecific = products.some(p => !p.universal);
+    const hasUniversal = products.some((p) => p.universal);
+    const hasSpecific = products.some((p) => !p.universal);
     if (hasUniversal && hasSpecific) {
       actions.push("show_universal_only");
     }
