@@ -17,7 +17,8 @@ export function useChat() {
         type: "text",
       };
 
-      setMessages((prev) => [...prev, userMessage]);
+      const currentMessages = [...messages, userMessage];
+      setMessages(currentMessages);
       setIsLoading(true);
 
       try {
@@ -26,14 +27,23 @@ export function useChat() {
           headers: {
             "Content-Type": "application/json",
           },
+          // Send the updated history
           body: JSON.stringify({
             message: content,
-            history: messages,
+            history: messages, // Send the history *before* the new user message
           }),
         });
 
         if (!response.ok) {
-          throw new Error("Failed to get response");
+          // Handle specific 429 error for rate limiting
+          if (response.status === 429) {
+            const errorData = await response.json();
+            throw new Error(
+              errorData.message ||
+                "Too many requests. Please try again shortly."
+            );
+          }
+          throw new Error("Failed to get response from the server.");
         }
 
         const data = await response.json();
@@ -43,18 +53,20 @@ export function useChat() {
           role: "assistant",
           content: data.message,
           timestamp: new Date(),
-          type: data.imageUrls && data.imageUrls.length > 0 ? "image" : "text",
-          imageUrls: data.imageUrls || [],
+          type: "text",
         };
 
         setMessages((prev) => [...prev, assistantMessage]);
       } catch (error) {
         console.error("Error sending message:", error);
+        const errorMessageContent =
+          error instanceof Error
+            ? error.message
+            : "Sorry, I encountered an error. Please try again.";
         const errorMessage: Message = {
           id: (Date.now() + 1).toString(),
           role: "assistant",
-          content:
-            "Sorry, I encountered an error. Please try again or contact our human representative.",
+          content: errorMessageContent,
           timestamp: new Date(),
           type: "text",
         };
