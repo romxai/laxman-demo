@@ -1,0 +1,294 @@
+[
+  {
+    "make": "Maruti",
+    "model": "Baleno",
+    "aliases": [
+      "baleno"
+    ]
+  },
+  {
+    "make": "Maruti",
+    "model": "Ertiga",
+    "aliases": [
+      "ertiga",
+      "ertiga -18"
+    ]
+  },
+  {
+    "make": "Maruti",
+    "model": "Brezza",
+    "aliases": [
+      "brezza"
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "Venue",
+    "aliases": [
+      "venue"
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "I 10",
+    "aliases": [
+      "i 10"
+    ]
+  },
+  {
+    "make": "Toyota",
+    "model": "Innova",
+    "aliases": [
+      "innova",
+      "new innova",
+      "old innova"
+    ]
+  },
+  {
+    "make": "Toyota",
+    "model": "Fortuner",
+    "aliases": [
+      "fortuner",
+      "new fortuner",
+      "old fortuner"
+    ]
+  },
+  {
+    "make": "Tata",
+    "model": "Harrier",
+    "aliases": [
+      "harrier"
+    ]
+  },
+  {
+    "make": "Mg",
+    "model": "Hector",
+    "aliases": [
+      "hector"
+    ]
+  },
+  {
+    "make": "Kia",
+    "model": "Sonet",
+    "aliases": [
+      "sonet"
+    ]
+  },
+  {
+    "make": "Kia",
+    "model": "Seltos",
+    "aliases": [
+      "seltos"
+    ]
+  },
+  {
+    "make": "Renault",
+    "model": "Duster",
+    "aliases": [
+      "duster"
+    ]
+  },
+  {
+    "make": "Jeep",
+    "model": "Compass",
+    "aliases": [
+      "compass"
+    ]
+  },
+  {
+    "make": "Mahindra",
+    "model": "Thar",
+    "aliases": [
+      "thar"
+    ]
+  },
+  {
+    "make": "Kia",
+    "model": "Carens",
+    "aliases": [
+      "carens"
+    ]
+  },
+  {
+    "make": "Honda",
+    "model": "Amaze",
+    "aliases": [
+      "amaze",
+      "amaze -18"
+    ]
+  },
+  {
+    "make": "Ford",
+    "model": "Aspire",
+    "aliases": [
+      "aspire"
+    ]
+  },
+  {
+    "make": "Mahindra",
+    "model": "Bolero",
+    "aliases": [
+      "bolero",
+      "bolero 7 seater"
+    ]
+  },
+  {
+    "make": "Maruti",
+    "model": "Celerio",
+    "aliases": [
+      "celerio"
+    ]
+  },
+  {
+    "make": "Maruti",
+    "model": "Ciaz",
+    "aliases": [
+      "ciaz"
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "Eon",
+    "aliases": [
+      "eon"
+    ]
+  },
+  {
+    "make": "Toyota",
+    "model": "Etios",
+    "aliases": [
+      "etios"
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "I 10 Grand",
+    "aliases": [
+      "i 10 grand"
+    ]
+  },
+  {
+    "make": "Toyota",
+    "model": "Innova Crysta",
+    "aliases": [
+      "innova crysta"
+    ]
+  },
+  {
+    "make": "Toyota",
+    "model": "Liva",
+    "aliases": [
+      "liva"
+    ]
+  },
+  {
+    "make": "Nissan",
+    "model": "Magnite",
+    "aliases": [
+      "magnite"
+    ]
+  },
+  {
+    "make": "Honda",
+    "model": "City",
+    "aliases": [
+      "city",
+      "new city 2020",
+      "new h. city"
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "I 20",
+    "aliases": [
+      "i 20",
+      "i 20elite",
+      "old i 20",
+      "old i 20 - i 20elite"
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "Santro",
+    "aliases": [
+      "santro",
+      "santro 2018"
+    ]
+  },
+  {
+    "make": "Maruti",
+    "model": "Swift",
+    "aliases": [
+      "dzire old",
+      "swift old",
+      "swift old / dzire old",
+      "swift new",
+      "dzire new"
+    ]
+  },
+  {
+    "make": "Renault",
+    "model": "Triber",
+    "aliases": [
+      "triber"
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "Verna",
+    "aliases": [
+      "verna",
+      "verna 2017"
+    ]
+  },
+  {
+    "make": "Maruti",
+    "model": "Wagan R-19",
+    "aliases": [
+      "wagan r-19"
+    ]
+  },
+  {
+    "make": "Honda",
+    "model": "Wrv",
+    "aliases": [
+      "wrv",
+      "wrv 2018"
+    ]
+  },
+  {
+    "make": "Mahindra",
+    "model": "Xuv300",
+    "aliases": [
+      "xuv300"
+    ]
+  },
+  {
+    "make": "Skoda",
+    "model": "Kushaq",
+    "aliases": [
+      "kushaq"
+    ]
+  },
+  {
+    "make": "Tata",
+    "model": "Safari",
+    "aliases": [
+      "safari 7str"
+    ]
+  },
+  {
+    "make": "Tata",
+    "model": "Hexa",
+    "aliases": [
+      "hexa"
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "Creta",
+    "aliases": [
+      "creta"
+    ]
+  }
+]

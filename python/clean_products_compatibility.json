@@ -1,0 +1,3267 @@
+[
+  {
+    "sku": "GMA_AD_001",
+    "name": "GoMechanic Accessories Olympus Smart Fit (2/16, MTK processor, 9\")",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_003",
+    "name": "GoMechanic Accessories Olympus Smart Fit (2/16, MTK processor, 10\")",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_004",
+    "name": "GoMechanic Accessories Olympus Smart Fit Android Screen- Creta (2/32, 10.25\")",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "Creta",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_AD_006",
+    "name": "Gomechanic 7\" inch",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_007",
+    "name": "Gomechanic TS7 9\" inch 2/16",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_008",
+    "name": "Gomechanic TS7 10\" inch 2/16",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_009",
+    "name": "GoMechanic Accessories Olympus Smart Fit (2/16, MTK processor, 9\") &(Apple Car Play+Android Auto)",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_010",
+    "name": "Gomechanic 7",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_020",
+    "name": "GoMechanic Accessories Olympus Smart Fit (2/16, T3L processor, 9\")",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_022",
+    "name": "GoMechanic Accessories Olympus Smart Fit (2/16, T3L processor, 9\") &(Apple Car Play+Android Auto) Wired",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_024",
+    "name": "GoMechanic Accessories Olympus Smart Fit (2/16, T3L processor, 9\") &(Apple Car Play+Android Auto) Wireless",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_030",
+    "name": "GoMechanic Accessories Olympus Smart Fit (2/32, T3L processor, 9\")",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_031",
+    "name": "GoMechanic Accessories Olympus Smart Fit (2/32, T3L processor, 10\")",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_032",
+    "name": "GoMechanic T5 9\" Inch 2/32",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_035",
+    "name": "GoMechanic Accessories ZEUS Smart Fit Android Screen- 8/128, 9\"",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_036",
+    "name": "GoMechanic Accessories ZEUS Smart Fit Android Screen- 8/128, 10\"",
+    "brand": "GoMechanic",
+    "category": "Android Screen",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AS_004",
+    "name": "GoMechanic Accessories Ares A1 4 inch 2-way",
+    "brand": "GoMechanic",
+    "category": "Speaker",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AS_005",
+    "name": "GoMechanic Accessories Ares A2 6 inch 2-way",
+    "brand": "GoMechanic",
+    "category": "Speaker",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AS_006",
+    "name": "GoMechanic Accessories Ares A3 6\"x9\" 3 way oval",
+    "brand": "GoMechanic",
+    "category": "Speaker",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BLZ_002",
+    "name": "Blaze- Led Light- H7- Single Beam",
+    "brand": null,
+    "category": "Blaze LED",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BLZ_003",
+    "name": "Blaze- Led Light- H8- Single Beam",
+    "brand": null,
+    "category": "Blaze LED",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BLZ_004",
+    "name": "Blaze- Led Light- H1- Single Beam",
+    "brand": null,
+    "category": "Blaze LED",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BLZ_005",
+    "name": "Blaze- Led Light- H3- Single Beam",
+    "brand": null,
+    "category": "Blaze LED",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BLZ_006",
+    "name": "Blaze- Led Light- H27- Single Beam",
+    "brand": null,
+    "category": "Blaze LED",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BLZ_007",
+    "name": "Blaze- Led Light- 9005",
+    "brand": null,
+    "category": "Blaze LED",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BLZ_008",
+    "name": "Blaze- Led Light- 9006",
+    "brand": null,
+    "category": "Blaze LED",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BS_006",
+    "name": "BASSTUBE 8 INCH ZEUS-BX8R",
+    "brand": null,
+    "category": "Speaker",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BS_007",
+    "name": "BASSTUBE 10 INCH ZEUS-BX10R",
+    "brand": null,
+    "category": "Speaker",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_CB_001",
+    "name": "GoMechanic Accessories USB Cables - iOS",
+    "brand": "GoMechanic",
+    "category": "USB Cable",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_CB_002",
+    "name": "GoMechanic Accessories USB Cables - Android",
+    "brand": "GoMechanic",
+    "category": "USB Cable",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_DC_001",
+    "name": "Vision Pro Car DashCam",
+    "brand": null,
+    "category": "Camera and parking",
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_INBM_004",
+    "name": "NOIRE- INFINITY Boot Mats-BALENO",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Maruti",
+        "model": "Baleno",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_005",
+    "name": "NOIRE- INFINITY Boot Mats-ERTIGA -",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Maruti",
+        "model": "Ertiga",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_007",
+    "name": "NOIRE- INFINITY Boot Mats-BREZZA",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Maruti",
+        "model": "Brezza",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_017",
+    "name": "NOIRE- INFINITY Boot Mats-VENUE",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "Venue",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_020",
+    "name": "NOIRE- INFINITY Boot Mats-I 10",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "I 10",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_022",
+    "name": "NOIRE- INFINITY Boot Mats-New Innova",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Toyota",
+        "model": "Innova",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_023",
+    "name": "NOIRE- INFINITY Boot Mats-New Fortuner",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Toyota",
+        "model": "Fortuner",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_024",
+    "name": "NOIRE- INFINITY Boot Mats-Old Fortuner",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Toyota",
+        "model": "Fortuner",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_025",
+    "name": "NOIRE- INFINITY Boot Mats-Old Innova",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Toyota",
+        "model": "Innova",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_029",
+    "name": "NOIRE- INFINITY Boot Mats-Harrier",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Tata",
+        "model": "Harrier",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_035",
+    "name": "NOIRE- INFINITY Boot Mats-Hector",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Mg",
+        "model": "Hector",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_036",
+    "name": "NOIRE- INFINITY Boot Mats-SONET",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Kia",
+        "model": "Sonet",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_037",
+    "name": "NOIRE- INFINITY Boot Mats-SELTOS",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Kia",
+        "model": "Seltos",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_038",
+    "name": "NOIRE- INFINITY Boot Mats-Duster",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Renault",
+        "model": "Duster",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_040",
+    "name": "NOIRE- INFINITY Boot Mats-Compass",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Jeep",
+        "model": "Compass",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_050",
+    "name": "NOIRE- INFINITY Boot Mats-THAR",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Mahindra",
+        "model": "Thar",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INBM_052",
+    "name": "NOIRE- INFINITY Boot Mats-Kia Carens",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Kia",
+        "model": "Carens",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_004",
+    "name": "NOIRE- INFINITY Honda AMAZE -18 ( AUTOMATIC NOT FOR MANUAL ) 2018 - ONWARDS Beige",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Beige",
+    "compatibility": [
+      {
+        "make": "Honda",
+        "model": "Amaze",
+        "year_from": 2018,
+        "year_to": null,
+        "notes": "Automatic only"
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_005",
+    "name": "NOIRE- INFINITY Honda AMAZE -18 ( AUTOMATIC NOT FOR MANUAL ) 2018 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Honda",
+        "model": "Amaze",
+        "year_from": 2018,
+        "year_to": null,
+        "notes": "Automatic only"
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_006",
+    "name": "NOIRE- INFINITY Ford ASPIRE JULY 2015 - ONWARDS Beige",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Beige",
+    "compatibility": [
+      {
+        "make": "Ford",
+        "model": "Aspire",
+        "year_from": 2015,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_007",
+    "name": "NOIRE- INFINITY Ford ASPIRE JULY 2015 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Ford",
+        "model": "Aspire",
+        "year_from": 2015,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_010",
+    "name": "NOIRE- INFINITY Mahindra BOLERO ( SUITABLE FOR 7 SEATER ) (With Boot ) SEP 2011 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Mahindra",
+        "model": "Bolero",
+        "year_from": 2011,
+        "year_to": null,
+        "notes": "7 seater"
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_015",
+    "name": "NOIRE- INFINITY Maruti CELERIO FEB 2014 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Maruti",
+        "model": "Celerio",
+        "year_from": 2014,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_016",
+    "name": "NOIRE- INFINITY Maruti CIAZ SEP 2014 - ONWARDS Beige",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Beige",
+    "compatibility": [
+      {
+        "make": "Maruti",
+        "model": "Ciaz",
+        "year_from": 2014,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_017",
+    "name": "NOIRE- INFINITY Maruti CIAZ SEP 2014 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Maruti",
+        "model": "Ciaz",
+        "year_from": 2014,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_032",
+    "name": "NOIRE- INFINITY Hyundai EON APR 2011 - MAY 2019 Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "Eon",
+        "year_from": 2011,
+        "year_to": 2019,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_035",
+    "name": "NOIRE- INFINITY Toyota ETIOS DEC 2010 - APR 2020 Beige",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Beige",
+    "compatibility": [
+      {
+        "make": "Toyota",
+        "model": "Etios",
+        "year_from": 2010,
+        "year_to": 2020,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_038",
+    "name": "NOIRE- INFINITY Tata HARRIER Jan 2019 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Tata",
+        "model": "Harrier",
+        "year_from": 2019,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_040",
+    "name": "NOIRE- INFINITY MG HECTOR JUNE 2019 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Mg",
+        "model": "Hector",
+        "year_from": 2019,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_042",
+    "name": "NOIRE- INFINITY Hyundai I 10 GRAND AUG 2019 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "I 10 Grand",
+        "year_from": 2019,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_049",
+    "name": "NOIRE- INFINITY Toyota INNOVA CRYSTA AUTOMATIC (WithOUT Boot ) MAY 2016 - ONWARDS Beige",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Beige",
+    "compatibility": [
+      {
+        "make": "Toyota",
+        "model": "Innova Crysta",
+        "year_from": 2016,
+        "year_to": null,
+        "notes": "Automatic"
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_057",
+    "name": "NOIRE- INFINITY Toyota LIVA DEC 2010 - APR 2020 Beige",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Beige",
+    "compatibility": [
+      {
+        "make": "Toyota",
+        "model": "Liva",
+        "year_from": 2010,
+        "year_to": 2020,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_060",
+    "name": "NOIRE- INFINITY Nissan MAGNITE Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Nissan",
+        "model": "Magnite",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_064",
+    "name": "NOIRE- INFINITY Honda New CITY 2020 JULY 2020 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Honda",
+        "model": "City",
+        "year_from": 2020,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_066",
+    "name": "NOIRE- INFINITY Honda New H. CITY (Automatic) (SUITABLE ONLY FOR AUTOMATIC) Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Honda",
+        "model": "City",
+        "year_from": null,
+        "year_to": null,
+        "notes": "Automatic only"
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_074",
+    "name": "NOIRE- INFINITY Hyundai OLD I 20 - I 20ELITE AUG 2014 - NOV 2020 Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "I 20",
+        "year_from": 2014,
+        "year_to": 2020,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_084",
+    "name": "NOIRE- INFINITY Hyundai SANTRO 2018 OCT 2018 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "Santro",
+        "year_from": 2018,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_090",
+    "name": "NOIRE- INFINITY Kia SELTOS AUG 2019 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Kia",
+        "model": "Seltos",
+        "year_from": 2019,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_097",
+    "name": "NOIRE- INFINITY Maruti SWIFT OLD / DZIRE OLD 2010 - 2018 Beige",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Beige",
+    "compatibility": [
+      {
+        "make": "Maruti",
+        "model": "Swift",
+        "year_from": 2010,
+        "year_to": 2018,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_104",
+    "name": "NOIRE- INFINITY Renault TRIBER ( 3 Row ) AUG 2019 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Renault",
+        "model": "Triber",
+        "year_from": 2019,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_107",
+    "name": "NOIRE- INFINITY Hyundai VENUE MAY 2019 - ONWARDS Beige",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Beige",
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "Venue",
+        "year_from": 2019,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_109",
+    "name": "NOIRE- INFINITY Hyundai VERNA 2017 AUG 2017 - ONWARDS Beige",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Beige",
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "Verna",
+        "year_from": 2017,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_110",
+    "name": "NOIRE- INFINITY Hyundai VERNA 2017 AUG 2017 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "Verna",
+        "year_from": 2017,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_112",
+    "name": "NOIRE- INFINITY Maruti WAGAN R-19 JAN 2019 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Maruti",
+        "model": "Wagan R-19",
+        "year_from": 2019,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_114",
+    "name": "NOIRE- INFINITY Honda WRV 2018 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Honda",
+        "model": "Wrv",
+        "year_from": 2018,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_120",
+    "name": "NOIRE- INFINITY Mahindra XUV300 ( MANUAL NOT FOR AUTOMATIC ) FEB 2019 - ONWARDS Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Mahindra",
+        "model": "Xuv300",
+        "year_from": 2019,
+        "year_to": null,
+        "notes": "Manual only"
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_123",
+    "name": "NOIRE- INFINITY Toyota Old Fortuner (without Boot) Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Toyota",
+        "model": "Fortuner",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_124",
+    "name": "NOIRE- INFINITY Skoda Kushaq Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Skoda",
+        "model": "Kushaq",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_125",
+    "name": "NOIRE- INFINITY safari 7str Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Tata",
+        "model": "Safari",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_127",
+    "name": "NOIRE- INFINITY Tata Hexa Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Tata",
+        "model": "Hexa",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_130",
+    "name": "NOIRE- INFINITY Maruti Ertiga -18 W/O Black",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Maruti",
+        "model": "Ertiga",
+        "year_from": 2018,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_INF_144",
+    "name": "NOIRE- INFINITY Kia Carens Black (without Boot)",
+    "brand": "Noire Infinity",
+    "category": "Mats",
+    "colour": "Black",
+    "compatibility": [
+      {
+        "make": "Kia",
+        "model": "Carens",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "GMA_MC_002",
+    "name": "GoMechanic Accessories Brevi B2 Wireless Mobile Charger Red",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Red",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MC_003",
+    "name": "GoMechanic Accessories Brevi B1 Anti-Skid Wireless Charging Pad",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MC_006",
+    "name": "GoMechanic Accessories Dual QC 3.0 USB and PD",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_102",
+    "name": "GoMechanic Accessories Moulded Cushion - Pack of 2 (Black)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_103",
+    "name": "GoMechanic Accessories Moulded Cushion - Pack of 2 (Beige)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_105",
+    "name": "GoMechanic Accessories Lumbar Model 1 (Grey)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Grey",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_108",
+    "name": "GoMechanic Accessories Big Head Rest - Pack of 2 (Beige)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_110",
+    "name": "GoMechanic Accessories Dog Bone Neck Rest- Pack of 2 (Beige)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_111",
+    "name": "GoMechanic Accessories Travel Pillow (Black)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_112",
+    "name": "Neck Travel Pillow Beige",
+    "brand": null,
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_113",
+    "name": "GoMechanic Accessories Travel Pillow ( Blue)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Blue",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_114",
+    "name": "GoMechanic Accessories Travel Pillow ( Grey)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Grey",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_115",
+    "name": "GoMechanic Accessories Curved Travel Pillow (Black)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_117",
+    "name": "GoMechanic Accessories Curved Travel Pillow (Blue)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Blue",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_118",
+    "name": "GoMechanic Accessories Curved Travel Pillow (Grey)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Grey",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_125",
+    "name": "GoMechanic Accessories Tailbone Cushion - Black",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MM_127",
+    "name": "GoMechanic Accessories Lumbar Model 2 (Grey)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Grey",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MS_001",
+    "name": "GoMechanic Bluetooth Hands-Free FM Transmitter With LCD Display & 3.0 Dual Fast Charging USB Ports",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MS_002",
+    "name": "Blitz B2 With FM",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_RC_002",
+    "name": "GoMechanic Accessories Universal Rear View Camera with Dynamic Guidelines",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_TI_002",
+    "name": "Gomechanic Accessories Tyre Inflator-Model 2",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_TI_003",
+    "name": "Gomechanic Accessories Tyre Inflator-Model 3",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_TI_004",
+    "name": "Gomechanic Accessories Tyre Inflator-Model 4",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_TI_005",
+    "name": "GoMechanic Accessories Gusto T5",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_TI_007",
+    "name": "Tyre inflator, T3 blue and red Variant",
+    "brand": null,
+    "category": null,
+    "colour": "blue and red",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_VC_001",
+    "name": "Gomechanic Accessories Vacuum Cleaner-Black/Yellow",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black/Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_VC_005",
+    "name": "GoMechanic Proton 6000 Handheld Super Suction Wet/Dry with 1 Year Warranty for All Cars",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_VC_007",
+    "name": "GoMechanic Accessories Proton 4500",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "HUR_AD_002",
+    "name": "HURRICANE ANDROID 10'' 1/16 TS7",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_AT_004",
+    "name": "Molecule Atom A1 4'' speakers",
+    "brand": "Molecule",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_AT_005",
+    "name": "Molecule Atom A2 6'' speakers",
+    "brand": "Molecule",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_AT_006",
+    "name": "Molecule Atom A3 Oval speakers",
+    "brand": "Molecule",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_001",
+    "name": "Molecule Black with Black S (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_002",
+    "name": "Molecule Black with Silver S (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_003",
+    "name": "Molecule Black with Red S (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_004",
+    "name": "Molecule Black with Tan S (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_005",
+    "name": "Molecule Beige with Beige S (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_006",
+    "name": "Molecule Black with Black M (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_007",
+    "name": "Molecule Black with Silver M (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_008",
+    "name": "Molecule Black with Red M (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_009",
+    "name": "Molecule Black with Tan M (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_010",
+    "name": "Molecule Beige with Beige M (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_011",
+    "name": "Molecule Black with Black L (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_012",
+    "name": "Molecule Black with Silver L (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_013",
+    "name": "Molecule Black with Red L (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_014",
+    "name": "Molecule Black with Tan L (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_SC_015",
+    "name": "Molecule Beige with Beige L (Set of 5pcs)",
+    "brand": "Molecule",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_TS_116",
+    "name": "Molecule TS7 (16GB, 9\")",
+    "brand": "Molecule",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_TS_120",
+    "name": "Molecule TS7G Processor 9\" Inch 2/32",
+    "brand": "Molecule",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_TS_121",
+    "name": "Molecule TS7 (32GB, 10\")",
+    "brand": "Molecule",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_TS_122",
+    "name": "Molecule TS7G Processor 9\" Inch 2/32",
+    "brand": "Molecule",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_TS_124",
+    "name": "Molecule with Camera TS7 Processor 9 Inch 2/32",
+    "brand": "Molecule",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_050",
+    "name": "Gomechanic TS7 9\" inch 2+32",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_051",
+    "name": "Gomechanic TS7 10\" inch 2+32",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_052",
+    "name": "GoMechanic Accessories Olympus Smart Fit (MTK Processor 2+64 9\")",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_054",
+    "name": "Gomechanic MTK 9\" inch 2+64",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_060",
+    "name": "GoMechanic Accessories Olympus Smart Fit (T5 Processor 2+32 9\")",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_061",
+    "name": "GoMechanic Accessories Olympus Smart Fit (T5 Processor 2+32 10\")",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_070",
+    "name": "GoMechanic Accessories ADONIS Smart Fit (T5 Processor 4+64GB 9\")",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_071",
+    "name": "GoMechanic Accessories ADONIS Smart Fit (T5 Processor 4+64GB 10\")",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_080",
+    "name": "Gomechanic Accessories Zeus (6+128 GB 9\") (QLED)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_081",
+    "name": "Gomechanic Accessories Zeus (6+128 GB 10\") (QLED)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_090",
+    "name": "Dual Knob Android 10.1Inch, 2+32G",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_091",
+    "name": "Dual Knob Android 9.7Inch, 4+64G",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_092",
+    "name": "Dual Knob Android 11.5Inch, 4+64G",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_093",
+    "name": "Gomechanic Accessories Single Knob Android 11.5 Inch, 4+64",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AD_097",
+    "name": "Gomechanic Car Specific Android Thar 10.3 Inch 2+32",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Mahindra",
+        "model": "Thar",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "SE_AD_098",
+    "name": "Gomechanic Car Specific Android Seltos 12.3 Inch 2+32",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Kia",
+        "model": "Seltos",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "SE_AD_099",
+    "name": "Gomechanic Car Specific Android Creta 12.3 Inch 2+32",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [
+      {
+        "make": "Hyundai",
+        "model": "Creta",
+        "year_from": null,
+        "year_to": null,
+        "notes": ""
+      }
+    ],
+    "universal": false
+  },
+  {
+    "sku": "SE_AS_004",
+    "name": "GoMechanic Accessories Ares A1 4 inch 2-way",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AS_005",
+    "name": "GoMechanic Accessories Ares A2 6 inch 2-way",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AS_006",
+    "name": "GoMechanic Accessories Ares A3 6\"x9\" 3 way oval",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_AS_010",
+    "name": "GoMechanic Accessories 6.5 inch",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_BS_003",
+    "name": "GoMechanic Accessories Resonar R1 D-shape 8\" active bass tube - Premium",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_BS_004",
+    "name": "GoMechanic Accessories Resonar R2 D-shape 10\" active bass tube - Premium",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_BTFM_001",
+    "name": "Gomechanic Car Bluetooth Audio Player",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_BTFM_002",
+    "name": "Gomechanic Car Bluetooth Audio Player With Mobile Stand",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_CB_003",
+    "name": "GoMechanic Accessories USB Cables - Type C",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_CB_004",
+    "name": "GoMechanic Accessories USB Cables 3 in 1",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_CB_005",
+    "name": "GoMechanic Accessories USB Cables C TO C",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_CB_006",
+    "name": "GoMechanic Accessories USB Cables C to Lightning",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_CC_011",
+    "name": "GOMECHANIC - 7 PACK",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_DC_001",
+    "name": "Dashcam- 2K Dual Channel (MG4 Pro)",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_DC_001_WIRING_KIT",
+    "name": "Wiring Kit Dual Channel (MG4 Pro) Accessories Items",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_DC_002",
+    "name": "Gomechanic Accessories Dashcam- 4K Dual Channel (G11 Max)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_DC_002_WIRING_KIT",
+    "name": "Hard Wiring Kit For Auto Vision Pro (G11 Max) Accessories Items",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_DS_001",
+    "name": "Gomechanic Accessories 500x700 2.1 inch (Set of 10pcs)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_ENCL_001",
+    "name": "ENCLOSER 8 INCH ZEUS EX8R",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_ENCL_002",
+    "name": "Zeus EX10R Encloser",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_001",
+    "name": "Gomechanic Accessories PrismX H4 LED Headlight (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_002",
+    "name": "Gomechanic Accessories PrismX H8 LED Headlight (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_003",
+    "name": "Gomechanic Accessories PrismX H7 LED Headlight (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_005",
+    "name": "Gomechanic Accessories PrismX H1 LED Headlight (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_006",
+    "name": "Gomechanic Accessories PrismX 9005/9012 LED Headlight (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_007",
+    "name": "Gomechanic Accessories PrismX 9006 LED Headlight (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_008",
+    "name": "Gomechanic Accessories PrismX 9012 LED Headlight (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_009",
+    "name": "Gomechanic Accessories PrismX 9005/9006/9012 LED Headlight (160 W) 6000k",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_011",
+    "name": "Gomechanic Accessories Lumiere H4/H19 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_012",
+    "name": "Gomechanic Accessories Lumiere H8/H11 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_013",
+    "name": "Gomechanic Accessories Lumiere H7/H18 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_014",
+    "name": "Gomechanic Accessories Lumiere H1 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_015",
+    "name": "Gomechanic Accessories Lumiere H3 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_016",
+    "name": "Gomechanic Accessories Lumiere 9005/9006 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_017",
+    "name": "Gomechanic Accessories Lumiere 9006 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_018",
+    "name": "Gomechanic Accessories Lumiere 9012 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_019",
+    "name": "Gomechanic Accessories Lumiere H27 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_020",
+    "name": "Gomechanic Accessories Lumiere 9005/9006/9012 LED Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_021",
+    "name": "Gomechanic Accessories Lumiere H4/H19 Yellow LED 4500k Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_022",
+    "name": "Gomechanic Accessories Lumiere H8/H11 Yellow LED 4500k Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_023",
+    "name": "Gomechanic Accessories Lumiere H7/H18 Yellow LED 4500k Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_024",
+    "name": "Gomechanic Accessories Lumiere 9005/9006 Yellow LED 4500k Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_025",
+    "name": "Gomechanic Accessories Lumiere 9012 Yellow LED 4500k Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_026",
+    "name": "Gomechanic Accessories Lumiere H1 Yellow LED 4500k Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_027",
+    "name": "Gomechanic Accessories Lumiere H27 Yellow LED 4500k Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_028",
+    "name": "Gomechanic Accessories Lumiere 9005/9006/9012 Yellow LED 4500k Headlight (220 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_041",
+    "name": "Gomechanic Accessories PrismX H4/H19 LED Yellow Headlight 4500k (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_042",
+    "name": "Gomechanic Accessories PrismX H8/H11 Yellow LED Headlight 4500k (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_043",
+    "name": "Gomechanic Accessories PrismX H7 Yellow LED Headlight 4500k (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_044",
+    "name": "Gomechanic Accessories PrismX 9005/9012 Yellow LED Headlight 4500k (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_045",
+    "name": "Gomechanic Accessories PrismX H1 Yellow LED Headlight 4500k (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_LED_046",
+    "name": "Gomechanic Accessories PrismX 9006 Yellow LED Headlight 4500k (160 W)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MC_001",
+    "name": "GoMechanic Accessories Dual QC 3.0 USB",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MC_006",
+    "name": "GoMechanic Accessories Dual QC 3.0 USB and PD",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MC_007",
+    "name": "GoMechanic Accessories Dual QC PD Charger and 3 in 1 Cable Combo",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MF_006",
+    "name": "GoMechanic Accessories 850 GSM Yellow & Grey Microfiber Cloth Pack of 2",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Yellow",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MF_009",
+    "name": "GoMechanic Accessories 350 GSM Microfiber Cloth Pack 3 Multicolor",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MH_004",
+    "name": "GoMechanic Accessories",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MM_101",
+    "name": "GoMechanic Accessories Coccyx Pillow",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MM_102",
+    "name": "GoMechanic Accessories Moulded Cushion - Pack of 2 (Black)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MM_104",
+    "name": "Lumbar Support Model 1 Black",
+    "brand": null,
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MM_107",
+    "name": "GoMechanic Accessories Big Head Rest - Pack of 2 (Black)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MM_109",
+    "name": "GoMechanic Accessories DogBone Headrest Black Pack of 2 Black",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MM_110",
+    "name": "GoMechanic Accessories DogBone Headrest Black Pack of 2 Beige",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MM_126",
+    "name": "GoMechanic Accessories Lumbar Model 2 Black",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MM_128",
+    "name": "GoMechanic Accessories Trio Headrest (Pack of 2)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_MM_129",
+    "name": "GoMechanic Accessories Armrest Cushion (Black)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_NG_001",
+    "name": "Noire Premium 18mm- Black",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_002",
+    "name": "Noire Premium 18mm- Black Grey Mix",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black Grey Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_003",
+    "name": "Noire Premium Grass Mats- Black Red Mix",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black Red Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_004",
+    "name": "bigNoire Premium Grass Mats- Black Tan Mix",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black Tan Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_005",
+    "name": "Noire Premium Grass Mats- Beige",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_006",
+    "name": "Noire Premium Grass Mats- Beige Brown Mix",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Beige Brown Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_007",
+    "name": "Noire Premium Grass Mats- Black Green Mix",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black Green Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_010",
+    "name": "Noire Premium 18mm Black (Set of 3pcs)",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_011",
+    "name": "Noire Premium 18mm Black Grey Mix (Set of 3pcs)",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black Grey Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_012",
+    "name": "Noire Premium 18mm Black Red Mix (Set of 3pcs)",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black Red Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_013",
+    "name": "Noire Premium 18mm Black Tan Mix (Set of 3pcs)",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black Tan Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_014",
+    "name": "Noire Premium 18mm Beige (Set of 3pcs)",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_015",
+    "name": "Noire Premium 18mm Beige Brown Mix (Set of 3pcs)",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Beige Brown Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_NG_016",
+    "name": "Noire Premium 18mm Black Green Mix (Set of 3pcs)",
+    "brand": "Noire",
+    "category": null,
+    "colour": "Black Green Mix",
+    "compatibility": [],
+    "universal": false
+  },
+  {
+    "sku": "SE_PF_001_24",
+    "name": "Gomechanic Accessories Mystique Car Air Fragrance Midnight Frost (Pack of 24)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_002_24",
+    "name": "Gomechanic Accessories Mystique Car Air Fragrance Sweet Peach (Pack of 24)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_003_24",
+    "name": "Gomechanic Accessories Mystique Car Air Fragrance Lemon Burst (Pack of 24)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_004_24",
+    "name": "Gomechanic Accessories Mystique Car Air Fragrance Cologne (Pack of 24)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_005_24",
+    "name": "Gomechanic Accessories Mystique Car Air Fragrance Fruity Passion (Pack of 24)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_006_24",
+    "name": "Gomechanic Accessories Mystique Car Air Fragrance Bliss (Pack of 24)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_007_18",
+    "name": "Gomechanic Accessories Eternelle Car Air Fragrance Bubble Pop (Pack of 18)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_008_18",
+    "name": "Gomechanic Accessories Eternelle Car Air Fragrance Ice Blast (Pack of 18)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_009_18",
+    "name": "Gomechanic Accessories Eternelle Car Air Fragrance Vanilla Delight (Pack of 18)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_010_18",
+    "name": "Gomechanic Accessories Eternelle Car Air Fragrance Bliss (Pack of 18)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_011_18",
+    "name": "Gomechanic Accessories Eternelle Car Air Fragrance Berry Burst (Pack of 18)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_RC_003",
+    "name": "Gomechanic Accessories Bumper Camera 150-160 Angle AHD 720P No Dynamic Lines",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_RC_004",
+    "name": "Gomechanic Accessories Number Plate Camera 170 Angle AHD 1080P No Dynamic Lines",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_RC_005",
+    "name": "Gomechanic Accessories Dome Camera 170 Angle AHD 1080P Dynamic Lines",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_RC_006",
+    "name": "Gomechanic Accessories Front + Rear Two Way Camera",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_SC_001",
+    "name": "Gomechanic Accessories Premium Steering wheel cover Sterro Black with Black",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_SC_002",
+    "name": "Gomechanic Accessories Premium Steering wheel cover Ceyta Black with Black",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_SC_003",
+    "name": "Gomechanic Accessories Premium Steering wheel cover Scota Black with Black",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_SC_004",
+    "name": "Gomechanic Accessories Premium Steering wheel cover Black with White",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_SC_005",
+    "name": "Gomechanic Accessories Premium Steering wheel cover Black with Red",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_SC_007",
+    "name": "Gomechanic Accessories Premium Steering wheel cover Coffee",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Coffee",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_SC_008",
+    "name": "Gomechanic Accessories Premium Steering wheel cover Beige",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Beige",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_SC_009",
+    "name": "Gomechanic Accessories Premium Steering wheel cover M Black with Grey",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_TI_005",
+    "name": "GoMechanic Accessories Gusto T5",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_TI_008",
+    "name": "GoMechanic Accessories Gusto T7 2in1 Vacuum Cleaner +",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_TI_010",
+    "name": "GoMechanic Accessories Gusto T9",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_TI_011",
+    "name": "Gomechanic Accessories Tyre Inflator-Model-10",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_TI_015",
+    "name": "GoMechanic Accessories Wireless Black/Yellow",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_TS_001",
+    "name": "Gomechanic Accessories 360 Degree Camera",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_TZ_001",
+    "name": "GoMechanic Accessories Tapiz 6 inch 3-way - Premium",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_USE_001",
+    "name": "ZEUS Thunder TX8R Underseat- 8\"",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_USE_002",
+    "name": "ZEUS Thunder TX10R Underseat- 10\"",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_VC_003",
+    "name": "Gomechanic Accessories Vacuum Cleaner Black Neutron 4500",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Black",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_VC_004",
+    "name": "GoMechanic Accessories Proton 4500 Vacuum Cleaner",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_VC_007",
+    "name": "Gomechanic Accessories Wireless Vacuum Cleaner",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "TAP_AD_001",
+    "name": "Tapiz 9 Inch 2/16",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "TAP_AD_002",
+    "name": "Tapiz 10 Inch 2/16",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "TZ_AD_001",
+    "name": "Tapiz TS7G Processor 9 Inch 1/32 Riddhi Siddhi",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_BTFM_001",
+    "name": "Car Bluetooth Audio Player",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_VC_004",
+    "name": "GoMechanic Accessories Proton 4500 Vacuum Cleaner",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_TI_008",
+    "name": "GoMechanic Accessories Gusto T7 2in1 Vacuum Cleaner +",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP018_10",
+    "name": "GOMECHANIC VISION HD 18\"/450MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP021_10",
+    "name": "GOMECHANIC VISION HD 21\"/525MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP016_10",
+    "name": "GOMECHANIC VISION HD 16\"/400MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP020_10",
+    "name": "GOMECHANIC VISION HD 20\"/500MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP024_10",
+    "name": "GOMECHANIC VISION HD 24\"/600MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP022_10",
+    "name": "GOMECHANIC VISION HD 22\"/550MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP026_10",
+    "name": "GOMECHANIC VISION HD 26\"/650MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP019_10",
+    "name": "GOMECHANIC VISION HD 19\"/475MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_AD_021",
+    "name": "GoMechanic Accessories Olympus Smart Fit (2/16, T3L processor, 10\")",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_TI_010",
+    "name": "GoMechanic Accessories Gusto T9",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNZZVAS005",
+    "name": "GOMECHANIC ANTI RAT TREATMENT - 500ML",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_TS_117",
+    "name": "",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_MC_001",
+    "name": "GoMechanic Accessories Dual QC 3.0 USB",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_ENCL_001",
+    "name": "ENCLOSER 8 INCH ZEUS EX8R",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_MTCP_232",
+    "name": "",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_BTFM_001",
+    "name": "",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNZZVAS011",
+    "name": "GOMECHANIC MULTI PURPOSE SPRAY GM-40- 500ML",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_CB_004",
+    "name": "GoMechanic Accessories USB Cables 3 in 1",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNZZVAS007",
+    "name": "GOMECHANIC BATTERY TERMINAL COAT - 500ML",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNZZVAS003",
+    "name": "GOMECHANIC AC DUCT FOAM CLEANER - 550ML",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNZZVAS010",
+    "name": "GOMECHANIC INSTANT RUST REMOVER - 500ML",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNZZVAS014",
+    "name": "GOMECHANIC THROTTLE VALVE CLEANER - 500ML",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNZZVAS015",
+    "name": "GOMECHANIC CLIMA FRESH AC DISINFECTION SPRAY - 100ML",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMA_VC_006",
+    "name": "WIRELESS VACUUM CLEANER ELECTRON 6000",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP015_10",
+    "name": "GOMECHANIC VISION HD 15\"/375MM (Pack of 10)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP014_10",
+    "name": "GOMECHANIC VISION HD 14\"/350MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP012_10",
+    "name": "GOMECHANIC VISION HD 12\"/300MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP017_10",
+    "name": "GOMECHANIC VISION HD 17\"/425MM (Pack of 10)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "GMUNHDWP013_10",
+    "name": "GOMECHANIC VISION HD 13\"/325MM",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_021",
+    "name": "Hanging Pod - Lavender Bliss",
+    "brand": null,
+    "category": null,
+    "colour": "Lavender",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_020",
+    "name": "Hanging Pod - Eternal Musk",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_TI_002",
+    "name": "Gomechanic Accessories Tyre Inflator-Model 2",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_016_24",
+    "name": "GoMechanic Accessories Mistiva Assorted - Musk,Lavender, Lemon & Aqua (Pack of 24 | 6 Each)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_012_24",
+    "name": "GoMechanic Accessories Mistiva Musk (Pack of 24) (July'25)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_013_24",
+    "name": "GoMechanic Accessories Mistiva Lavender (Pack of 24) (July'25)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": "Lavender",
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_014_24",
+    "name": "GoMechanic Accessories Mistiva Lemon (Pack of 24) (July'25)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "SE_PF_015_24",
+    "name": "GoMechanic Accessories Mistiva Aqua (Pack of 24) (July'25)",
+    "brand": "GoMechanic",
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "COS_AD_001",
+    "name": "Cronos 9 Inch 4/64",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  },
+  {
+    "sku": "MOL_TS_126",
+    "name": "Molecule Platinum Series 9inch 2/32 (Aug'25)",
+    "brand": null,
+    "category": null,
+    "colour": null,
+    "compatibility": [],
+    "universal": true
+  }
+]

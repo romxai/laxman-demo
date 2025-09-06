@@ -1,5 +1,40 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Data Upload to MongoDB Atlas
+
+### Prerequisites
+1. Create a MongoDB Atlas account and cluster
+2. Get your connection string from Atlas dashboard
+3. Set up environment variables
+
+### Setup
+1. Copy `.env.example` to `.env.local`:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+2. Edit `.env.local` and replace with your actual MongoDB connection string:
+   ```
+   MONGODB_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority
+   ```
+
+### Upload Data
+Run the upload script to populate your MongoDB Atlas database:
+
+```bash
+npm run upload-data
+```
+
+This will:
+- Connect to your MongoDB Atlas cluster
+- Upload vehicle data from `python/car_models.json` to `vehicles` collection
+- Upload product data from `python/products_compatibility.json` to `products` collection
+- Create appropriate indexes for optimal query performance
+
+### Collections Created
+- **vehicles**: Contains vehicle make, model, and alias information
+- **products**: Contains product details with compatibility information
+
 ## Getting Started
 
 First, run the development server:
